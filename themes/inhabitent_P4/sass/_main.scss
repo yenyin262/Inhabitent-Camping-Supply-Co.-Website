@@ -1,0 +1,590 @@
+body p {
+    font-family: 'Merriweather', 'sans-serif';
+    font-size: 16px;
+  }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: "Novocento Sans Wide", 'sans-serif';
+}
+
+
+
+.header_logo_menu { 
+
+  // display: flex;
+  // width: 80%;
+  // margin: 0 auto;
+
+  height: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.main-navigation li { 
+  padding-right: 10px;
+}
+     .main-navigation a { 
+      color: white;
+     }
+
+  .main-navigation {
+  margin-right: 81px;
+
+ }
+
+.header_container { 
+  background: linear-gradient(rgba(0,0,0,0.38),rgba(0,0,0,0.38)), url('../../images/home-hero.jpg');
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  height:800px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+
+}
+
+
+
+
+.hero_logo { 
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo { 
+  height: 30px;
+  // position: absolute;
+  margin-left: 120px;
+  top: 9%;
+}
+
+
+
+ .main_logo { 
+  margin-top: 5%;
+ }
+
+ .shopStuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  
+  .shop_container h1,
+  .page-title { 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+ 
+    font-size:40px;
+  }
+
+  .shopStuff p { 
+    color: #404040;
+  }
+
+ .grid-item {
+  // border: 1px solid  #e1e1e1;
+  // border-top-width: 5px;
+  // text-align: center;
+  // font-family:'Merriweather';
+  // padding-top:20px;
+  // max-width: 22.2%;
+  // position: relative;
+  // height: 220px;
+  // margin-right: auto;
+  // margin-left: auto;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  font-family: Merriweather;
+  padding-top: 20px;
+  max-width: 22.2%;
+  position: relative;
+  height: 251px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid-item:hover {
+  border: 1px solid #d99054
+
+}
+
+  .grid-item img { 
+    width: 22%;
+  }
+
+.button_doStuff { 
+    background-color: #248A83 ;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    cursor: pointer;    
+    position: absolute;
+    left: 28%;
+    bottom: 3%;
+    width: 49%;
+    height: 16%;
+}
+// .button_eatStuff { 
+//   background-color: #248A83 ;
+//   text-transform: uppercase;
+//   border: none;
+//   color: white;
+//   padding: 9px;
+//   font-size: 15px;
+//   cursor: pointer;    
+//   position: absolute;
+//   left: 28%;
+//   bottom: 3%;
+//   width: 45%;
+//   height: 16%;
+// }
+
+
+// .button_sleepStuff { 
+//   background-color: #248A83 ;
+//   text-transform: uppercase;
+//   border: none;
+//   color: white;
+//   padding: 7px;
+//   font-size: 15px;
+//   cursor: pointer;    
+//   position: absolute;
+//   left: 25%;
+//   bottom: 3%;
+//   width: 52%;
+//   height: 16%;
+// }
+    
+
+
+// .button_wearStuff { 
+//   background-color: #248A83 ;
+//   text-transform: uppercase;
+//   border: none;
+//   color: white;
+//   padding: 7px;
+//   font-size: 15px;
+//   cursor: pointer;    
+//   position: absolute;
+//   left: 25%;
+//   bottom: 3%;
+//   width: 51%;
+//   height: 16%;
+// }
+    
+
+  
+
+  .grid-item a { 
+    color: white;
+    text-decoration:none;
+  }
+
+
+  .inhabitent-journal-container {
+  //   display: flex;
+  //   text-align: left;
+
+  // letter-spacing: 2px;
+  // font-weight: 400;
+  // text-transform: uppercase;
+  // margin-bottom: 3.8rem;
+  display: flex;
+  text-align: left;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  }  
+
+  .journalHomepage { 
+  //   border-bottom-width: 5px;
+  // border: 1px solid  #e1e1e1;
+  border: 1px solid #e1e1e1;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;;
+}
+.journalHomepage img {
+  height: 274px;
+  border-bottom: 5px solid #e1e1e1;
+}
+
+
+
+
+
+
+  
+  .inhabitent h2 { 
+  font-size: 2.4rem;
+  font-family:"Novocento Sans Wide";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+  
+
+
+.journal-title { 
+  font-size: 1.2rem;
+  padding-left: 19px; 
+  line-height: 1.25;
+}
+.journal-title a { 
+  text-decoration: none;
+  color: #248a83;  
+}
+
+
+
+.page-categories  { 
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.taxonomy-title {
+padding-right: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 44px;
+}
+.page-categories a { 
+  color: #2488A3;
+
+}
+
+.posted-on { 
+  padding-left: 20px;
+  font-size:10px;
+}
+.comments { 
+  font-size:10px
+}
+
+.journal-button { 
+ text-decoration: none;
+ border: solid 1px black;
+ padding: 7px;
+ color: black;
+ margin-left:20px;
+ 
+}
+
+.journal-button:visited {
+    color: #000;
+}
+.journal-button:hover { 
+  background-color:#248a83;
+  color: #ffffff;
+}
+
+
+// .inhabitent-button{ 
+//   position: relative;
+// }
+// .inhabitent_read { 
+//   background-color: #248a83;
+//   text-transform: uppercase;
+//   border: none;
+//   padding: 15px;
+//   font-size: 15px;
+//   cursor: pointer;
+//   left: 29%;
+//   bottom: 7%;
+//   position: absolute;
+//   text-decoration: none;
+//   height: 50px;
+//   font-size: 1.1rem;
+//   color: white !important;
+// }
+  .site-info { 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-image: url('../../images/dark-wood@2x.png');
+    background-size: cover;
+    background-position: center;
+    height:350px;
+    background-repeat: no-repeat;
+  }
+
+  .contact-info {
+    margin-top: 2%;
+    flex-basis:25%
+ }
+
+  .contact-info li { 
+  list-style:none;
+  color: #ffffff;
+  line-height: 1.75;
+  }
+
+  .contact-info h3 { 
+      color: #d99054;
+      text-transform: uppercase;
+  } 
+
+.fa-phone {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+  .social-info { 
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 10px;
+
+
+  }
+  .business-hours h3 { 
+    color: #d99054;
+    text-transform: uppercase;
+  }
+
+  .business-hours  {
+      color: #ffffff;
+      margin-top:2%;
+      line-height: 1.75;
+      flex-basis:25%
+
+  }
+
+  .footer-logo-wrapper {
+      margin-top:3%;
+      flex-basis:30%
+  }
+
+  .footer-logo { 
+    width:70%;
+  }
+
+
+  
+
+  .copyright { 
+      font-family:'Novocento Sans Wide', sans-serif;
+      color:white;
+     flex-basis:100%;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 100
+  }
+
+  .copyright-year  { 
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+ .latest-adventures-section { 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Novocento Sans Wide';
+  height: 887px;
+ }
+ .latest-adventures-section h2 { 
+
+   padding-top: 20px;
+    padding-bottom: 45px;
+    font-size: 40px;
+  }
+  .grid-container {
+    height: 600px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 130px;
+    grid-gap: 20px 20px;
+  }
+  .grid-item-canoe {
+    text-align: left;
+    font-size: 38px;
+    color: white;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('../../images/canoe-girl.jpg');
+    background-size: cover, cover;
+    background-position: center,  center;
+    background-repeat: no-repeat, no-repeat;
+    position:relative;
+    .button_canoe { 
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      text-transform: uppercase;
+      position: absolute;
+      left: 11%;
+      top: 41%;
+      height: 45px;
+      color: white;
+      width: 21%;
+      box-shadow: none;
+      border-color: white;
+      font-weight: 100;
+    }
+  }
+
+  .grid-item-beach { 
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    grid-column: 3 / 5;
+    background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('../../images/beach-bonfire.jpg');
+    background-size: cover, cover;
+    background-position: center,  center;
+    background-repeat: no-repeat, no-repeat;
+    position:relative;
+    .button_beach {
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      text-transform: uppercase;
+      position: absolute;
+      font-weight: 100;
+      height: 45px;
+      color: white;
+      box-shadow: none;
+      left: 6%;
+      top: 77%;
+    }
+  }
+
+  // .grid-item-mountain > .button_mountain {
+
+  // }
+  .grid-item-mountain {
+    font-size: 19px;
+    text-align: left;
+    color: white;
+    grid-column: 3/4;
+    background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url('../../images/mountain-hikers.jpg');
+    background-size: cover, cover;
+    background-position: center,  center;
+    background-repeat: no-repeat, no-repeat;
+    position:relative;
+    .button_mountain { 
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      text-transform: uppercase;
+      position: absolute;
+      font-weight: 100;
+      height: 45px;
+      color: white;
+      box-shadow: none;
+    }
+  }
+  .grid-item-sky {
+    font-size: 19px;
+    text-align: left;
+    color: white;
+    grid-column: 4 / 5;
+    background: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url('../../images/night-sky.jpg');
+    background-size: cover, cover;
+    background-position: center,  center;
+    background-repeat: no-repeat, no-repeat;
+    position:relative;
+    .button_sky { 
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      text-transform: uppercase;
+      position: absolute;
+      font-weight: 100;
+      height: 45px;
+      color: white;
+      box-shadow: none;
+    }
+  }
+
+  .button-container { 
+    position: relative;
+    height: 79px;
+    width: 40%;
+    top: 20px;
+  }
+  .button_latestadventures { 
+    background-color: #248a83;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    left: 29%;
+    bottom: 7%;
+    position: absolute;
+    text-decoration: none;
+    height: 50px;
+    font-size: 1.1rem;
+    color: white !important;
+  }
+
+
+.page-header { 
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+ border-bottom: 1px dashed #c8c8c8;
+}
+
+
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    list-style:none;
+    margin-left: -20px;
+
+}
+
+.product-container { 
+  border: 1px solid #e1e1e1;
+}
+
+.photo { 
+  background-color: #e1e1e1;
+}
+
+.product img {
+  height: 234px;
+  object-fit: cover;
+}
+
+.product-info {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none
+}
+
+.product-info:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "...................................................";
+} 
+
+.product-title  { 
+    display: inline;
+    padding-right: 0.33em;
+}
+
+.product-title,
+.product-price {
+    background: white;
+}
+
+
+.product-price {
+    float: right;
+    padding-left: 0.33em;
+}
+

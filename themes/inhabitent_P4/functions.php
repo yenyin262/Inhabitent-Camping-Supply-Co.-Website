@@ -22,9 +22,14 @@ function red_starter_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
+
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
 	) );
+
+	register_nav_menu('headerMenu', 'menuLocation');
+
+
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
@@ -88,7 +93,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-    wp_enqueue_style('stylesheet', get_template_directory_uri() . '/fonta.css');
+    wp_enqueue_style('inhabitent-font-awesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
@@ -110,3 +115,39 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/*
+add_action( 'pre_get_posts', 'my_change_sort_order'); 
+function my_change_sort_order($query){
+    if(is_archive()):
+        //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+        //Set the order ASC or DESC
+        $query->set( 'order', 'ASC' );
+        //Set the orderby
+        $query->set( 'orderby', 'title' );
+    endif;    
+};
+*/
+add_filter( 'posts_orderby' , 'custom_cpt_order' );
+
+function custom_cpt_order( $orderby ) {
+	global $wpdb;
+	
+	// Check if the query is for an archive
+	if ( is_archive() && get_query_var("post_type") == "product" ) {
+		// Query was for archive, then set order
+		return "$wpdb->posts.post_title ASC";
+	}
+	
+	return $orderby;
+}
+
+
+	add_action( 'pre_get_posts', 'shop_page' );
+// Show all Projects on Projects Archive Page
+function shop_page( $query ) {
+    if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'product' ) ) {
+            $query->set( 'posts_per_page', '-1' );
+    }
+}
+
