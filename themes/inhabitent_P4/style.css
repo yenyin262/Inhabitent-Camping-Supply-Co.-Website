@@ -254,16 +254,16 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Novecento Sans Wide';
-  src: url("../../fonts/NovecentoSansWide-DemiBold.eot");
-  src: url("../../fonts/NovecentoSansWide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/NovecentoSansWide-DemiBold.woff2") format("woff2"), url("../../fonts/NovecentoSansWide-DemiBold.woff") format("woff"), url("../../fonts/NovecentoSansWide-DemiBold.ttf") format("truetype"), url("../../fonts/NovecentoSansWide-DemiBold.svg#.") format("svg");
-  font-weight: bold;
+  font-family: 'Novecento sans wide Bold';
+  src: url("../../fonts/Novecentosanswide-DemiBold.eot");
+  src: url("../../fonts/Novecentosanswide-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-DemiBold.woff2") format("woff2"), url("../../fonts/Novecentosanswide-DemiBold.woff") format("woff"), url("../../fonts/Novecentosanswide-DemiBold.ttf") format("truetype"), url("../../fonts/Novecentosanswide-DemiBold.svg#Novecentosanswide-DemiBold") format("svg");
+  font-weight: 600;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento Sans Wide';
-  src: url("../../fonts/NovecentoSansWide-Normal.eot");
-  src: url("../../fonts/NovecentoSansWide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/NovecentoSansWide-Normal.woff2") format("woff2"), url("../../fonts/NovecentoSansWide-Normal.woff") format("woff"), url("../../fonts/NovecentoSansWide-Normal.ttf") format("truetype"), url("../../fonts/NovecentoSansWide-Normal.svg#.") format("svg");
+  font-family: 'Novecento sans wide';
+  src: url("../../fonts/Novecentosanswide-Normal.eot");
+  src: url("../../fonts/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecentosanswide-Normal.woff") format("woff"), url("../../fonts/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecentosanswide-Normal.svg#Novecentosanswide-Normal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -711,448 +711,602 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-body p {
-  font-family: 'Merriweather', 'sans-serif';
-  font-size: 16px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Novocento Sans Wide", 'sans-serif'; }
-
-.header_logo_menu {
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 10px; }
-
-.main-navigation li {
-  padding-right: 10px; }
-
-.main-navigation a {
-  color: white; }
-
-.main-navigation {
-  margin-right: 81px; }
-
-.header_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.38)), to(rgba(0, 0, 0, 0.38))), url("../../images/home-hero.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../../images/home-hero.jpg");
-  background-size: cover, cover;
-  background-repeat: no-repeat;
-  height: 800px;
-  margin-top: -40px;
-  margin-bottom: 60px; }
-
-.hero_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.logo {
-  height: 30px;
-  margin-left: 120px;
-  top: 9%; }
-
-.main_logo {
-  margin-top: 5%; }
-
-.shopStuff {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.shop_container h1,
-.page-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 200;
-  text-align: center;
-  font-size: 40px; }
-
-.shopStuff p {
-  color: #404040; }
-
-.grid-item {
-  border: 1px solid #e1e1e1;
-  text-align: center;
-  font-family: Merriweather;
-  padding-top: 20px;
-  max-width: 22.2%;
-  position: relative;
-  height: 251px;
-  margin-right: auto;
-  margin-left: auto; }
-
-.grid-item:hover {
-  border: 1px solid #d99054; }
-
-.grid-item img {
-  width: 22%; }
-
-.button_doStuff {
-  background-color: #248A83;
-  text-transform: uppercase;
-  border: none;
-  color: white;
-  padding: 9px;
-  font-size: 15px;
-  cursor: pointer;
-  position: absolute;
-  left: 28%;
-  bottom: 3%;
-  width: 49%;
-  height: 16%; }
-
-.grid-item a {
-  color: white;
-  text-decoration: none; }
-
-.inhabitent-journal-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-transform: uppercase; }
-
-.journalHomepage {
-  border: 1px solid #e1e1e1;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-bottom: 20px; }
-
-.journalHomepage img {
-  height: 274px;
-  border-bottom: 5px solid #e1e1e1; }
-
-.inhabitent h2 {
-  font-size: 2.4rem;
-  font-family: "Novocento Sans Wide";
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-weight: 400; }
-
-.journal-title {
-  font-size: 1.2rem;
-  padding-left: 19px;
-  line-height: 1.25; }
-
-.journal-title a {
-  text-decoration: none;
-  color: #248a83; }
-
-.page-categories {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 18px; }
-
-.taxonomy-title {
-  padding-right: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-left: 44px; }
-
-.page-categories a {
-  color: #2488A3; }
-
-.posted-on {
-  padding-left: 20px;
-  font-size: 10px; }
-
-.comments {
-  font-size: 10px; }
-
-.journal-button {
-  text-decoration: none;
-  border: solid 1px black;
-  padding: 7px;
-  color: black;
-  margin-left: 20px; }
-
-.journal-button:visited {
-  color: #000; }
-
-.journal-button:hover {
-  background-color: #248a83;
-  color: #ffffff; }
-
-.site-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-image: url("../../images/dark-wood@2x.png");
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  background-repeat: no-repeat; }
-
-.contact-info {
-  margin-top: 2%;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-
-.contact-info li {
-  list-style: none;
-  color: #ffffff;
-  line-height: 1.75; }
-
-.contact-info h3 {
-  color: #d99054;
-  text-transform: uppercase; }
-
-.fa-phone {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); }
-
-.social-info {
-  display: inline-block;
-  font-size: 24px;
-  color: white;
-  letter-spacing: 10px; }
-
-.business-hours h3 {
-  color: #d99054;
-  text-transform: uppercase; }
-
-.business-hours {
-  color: #ffffff;
-  margin-top: 2%;
-  line-height: 1.75;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-
-.footer-logo-wrapper {
-  margin-top: 3%;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-
-.footer-logo {
-  width: 70%; }
-
-.copyright {
-  font-family: 'Novocento Sans Wide', sans-serif;
-  color: white;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 100; }
-
-.copyright-year {
-  font-size: 0.8rem;
-  font-weight: 100; }
-
-.latest-adventures-section {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: 'Novocento Sans Wide';
-  height: 887px; }
-
-.latest-adventures-section h2 {
-  padding-top: 20px;
-  padding-bottom: 45px;
-  font-size: 40px; }
-
-.grid-container {
-  height: 600px;
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin-left: 130px;
-  grid-gap: 20px 20px; }
-
-.grid-item-canoe {
-  text-align: left;
-  font-size: 38px;
-  color: white;
-  grid-column: 1/3;
-  grid-row: 1/3;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/canoe-girl.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/canoe-girl.jpg");
-  background-size: cover, cover;
-  background-position: center,  center;
-  background-repeat: no-repeat, no-repeat;
-  position: relative; }
-  .grid-item-canoe .button_canoe {
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    text-transform: uppercase;
+body {
+  margin: 0;
+  padding: 0; }
+  body p.body {
+    font-family: "Merriweather", "sans-serif";
+    font-size: 16px;
+    line-height: 1.75;
+    color: #404040; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "Novecento sans wide", "sans-serif"; }
+  body .header_logo_menu {
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px; }
+  body .logo {
+    height: 30px;
+    margin-left: 120px;
+    top: 1%;
+    position: absolute; }
+  body .main-navigation {
+    margin-left: 69%;
+    position: absolute; }
+  body .main-navigation li {
+    padding-right: 10px; }
+  body .main-navigation a {
+    color: white; }
+  body .searchForm {
     position: absolute;
-    left: 11%;
-    top: 41%;
-    height: 45px;
+    right: 4%; }
+  body .open-search {
     color: white;
-    width: 21%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-color: white;
+    cursor: pointer;
+    padding: 0.5rem; }
+  body input[type=searchForm] {
+    border: 0;
+    background: transparent;
+    font-family: "Novecento Sans web", sans-serif;
+    text-transform: uppercase;
+    display: none; }
+  body .header_container {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.38)), to(rgba(0, 0, 0, 0.38))), url("../../images/home-hero.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../../images/home-hero.jpg");
+    background-size: cover, cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: -40px;
+    margin-bottom: 60px; }
+  body .hero_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  body .main_logo {
+    margin-top: 5%; }
+  body .green-header .header_logo_menu {
+    border-bottom: 1px solid #e1e1e1; }
+    body .green-header .header_logo_menu .main-navigation a {
+      color: #248a83; }
+    body .green-header .header_logo_menu .open-search {
+      color: #248a83; }
+  body .shopStuff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  body .shop_container h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+    font-size: 40px; }
+  body .page-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px; }
+  body .shopStuff p {
+    color: #404040; }
+  body .grid-item {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    font-family: "Merriweather";
+    padding-top: 20px;
+    max-width: 22.2%;
+    position: relative;
+    height: 251px;
+    margin-right: auto;
+    margin-left: auto; }
+  body .grid-item:hover {
+    border: 1px solid #d99054; }
+  body .grid-item img {
+    width: 22%; }
+  body .button_shopStuff {
+    background-color: #248a83;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    padding: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 28%;
+    bottom: 3%;
+    width: 49%;
+    height: 16%; }
+  body .grid-item a {
+    color: white;
+    text-decoration: none;
+    font-family: "Novecento sans wide"; }
+  body .inhabitent-journal-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  body .journalHomepage {
+    border: 1px solid #e1e1e1;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px; }
+  body .journalHomepage img {
+    height: 274px;
+    border-bottom: 5px solid #e1e1e1; }
+  body .inhabitent h2 {
+    font-size: 2.4rem;
+    font-family: "Novecento sans wide";
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 400; }
+  body .journal-title {
+    font-size: 1.2rem;
+    padding-left: 19px;
+    line-height: 1.25; }
+  body .journal-title a {
+    text-decoration: none;
+    color: #248a83; }
+  body .page-categories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 18px;
+    padding-bottom: 40px; }
+  body .taxonomy-title {
+    padding-right: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 44px; }
+  body .page-categories a {
+    color: #2488a3; }
+  body .posted-on {
+    padding-left: 20px;
+    font-size: 10px; }
+  body .comments {
+    font-size: 10px; }
+  body .journal-button {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 7px;
+    color: black;
+    font-size: 14px;
+    width: 27%;
+    height: 37px;
+    margin-left: 20px; }
+  body .journal-button:visited {
+    color: #000; }
+  body .journal-button:hover {
+    background-color: #248a83;
+    color: #ffffff;
+    border: none; }
+  body .site-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: url("../../images/dark-wood@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    background-repeat: no-repeat; }
+  body .contact-info {
+    margin-top: 2%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  body .contact-info li {
+    list-style: none;
+    color: #ffffff;
+    line-height: 1.75; }
+  body .contact-info h3 {
+    color: #d99054;
+    text-transform: uppercase; }
+  body .fa-phone {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  body .social-info {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 10px; }
+  body .business-hours h3 {
+    color: #d99054;
+    text-transform: uppercase; }
+  body .business-hours {
+    color: #ffffff;
+    margin-top: 2%;
+    line-height: 1.75;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  body .business-hours p {
+    color: #ffffff; }
+  body .footer-logo-wrapper {
+    margin-top: 3%;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%; }
+  body .footer-logo {
+    width: 70%; }
+  body .copyright {
+    font-family: "Novecento sans wide", sans-serif;
+    color: white;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: 100; }
-
-.grid-item-beach {
-  font-size: 25px;
-  text-align: left;
-  color: white;
-  grid-column: 3 / 5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/beach-bonfire.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/beach-bonfire.jpg");
-  background-size: cover, cover;
-  background-position: center,  center;
-  background-repeat: no-repeat, no-repeat;
-  position: relative; }
-  .grid-item-beach .button_beach {
-    border: 1px solid #ffffff;
-    background-color: transparent;
+  body .copyright p {
+    font-family: "Novecento sans wide", sans-serif;
+    color: white; }
+  body .copyright-year {
+    font-size: 0.8rem;
+    font-weight: 100; }
+  body .latest-adventures-section {
+    text-align: center;
     text-transform: uppercase;
-    position: absolute;
-    font-weight: 100;
-    height: 45px;
-    color: white;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    left: 6%;
-    top: 77%; }
-
-.grid-item-mountain {
-  font-size: 19px;
-  text-align: left;
-  color: white;
-  grid-column: 3/4;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/mountain-hikers.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/mountain-hikers.jpg");
-  background-size: cover, cover;
-  background-position: center,  center;
-  background-repeat: no-repeat, no-repeat;
-  position: relative; }
-  .grid-item-mountain .button_mountain {
-    border: 1px solid #ffffff;
-    background-color: transparent;
+    font-family: "Novecento sans wide";
+    height: 887px;
+    letter-spacing: 2px; }
+  body .latest-adventures-section h2 {
+    padding-top: 20px;
+    padding-bottom: 45px;
+    font-size: 40px;
+    font-weight: 400; }
+  body .grid-container {
+    height: 600px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 130px;
+    grid-gap: 20px 20px; }
+    body .grid-container .grid-item-canoe {
+      padding-left: 12px;
+      text-align: left;
+      font-size: 38px;
+      font-weight: 400;
+      color: white;
+      grid-column: 1/3;
+      grid-row: 1/3;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/canoe-girl.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/canoe-girl.jpg");
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      position: relative; }
+      body .grid-container .grid-item-canoe .button_canoe {
+        border: 1px solid #fff;
+        background-color: transparent;
+        text-transform: uppercase;
+        position: absolute;
+        left: 4%;
+        top: 41%;
+        height: 37px;
+        color: #fff;
+        width: 25%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-color: #fff; }
+        body .grid-container .grid-item-canoe .button_canoe:hover {
+          background-color: #248a83;
+          border: none; }
+    body .grid-container .grid-item-canoe h3 {
+      font-weight: 400; }
+    body .grid-container .grid-item-beach {
+      font-size: 25px;
+      text-align: left;
+      padding-left: 8px;
+      color: white;
+      grid-column: 3 / 5;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/beach-bonfire.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/beach-bonfire.jpg");
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      position: relative; }
+      body .grid-container .grid-item-beach .button_beach {
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        text-transform: uppercase;
+        position: absolute;
+        font-weight: 100;
+        height: 45px;
+        color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        left: 6%;
+        top: 69%;
+        width: 25%; }
+        body .grid-container .grid-item-beach .button_beach:hover {
+          background-color: #248a83;
+          border: none; }
+    body .grid-container .grid-item-beach h3 {
+      font-weight: 400; }
+    body .grid-container .grid-item-mountain {
+      font-size: 19px;
+      font-weight: 400;
+      text-align: left;
+      color: white;
+      grid-column: 3/4;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/mountain-hikers.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/mountain-hikers.jpg");
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      position: relative; }
+      body .grid-container .grid-item-mountain .button_mountain {
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        text-transform: uppercase;
+        position: absolute;
+        font-weight: 100;
+        height: 39px;
+        color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        top: 62%;
+        left: 6%;
+        width: 60%; }
+        body .grid-container .grid-item-mountain .button_mountain:hover {
+          background-color: #248a83;
+          border: none; }
+    body .grid-container .grid-item-mountain h3 {
+      position: relative;
+      top: 17%;
+      left: 5%;
+      font-weight: 400; }
+    body .grid-container .grid-item-sky {
+      font-size: 19px;
+      font-weight: lighter;
+      text-align: left;
+      color: white;
+      grid-column: 4 / 5;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/night-sky.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/night-sky.jpg");
+      background-size: cover, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+      position: relative; }
+      body .grid-container .grid-item-sky .button_sky {
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        text-transform: uppercase;
+        position: absolute;
+        font-weight: 100;
+        height: 38px;
+        color: white;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        left: 7%;
+        width: 52%; }
+        body .grid-container .grid-item-sky .button_sky:hover {
+          background-color: #248a83;
+          border: none; }
+    body .grid-container .grid-item-sky h3 {
+      position: relative;
+      left: 8%;
+      top: 6%;
+      font-weight: 400; }
+  body .button-container {
+    position: relative;
+    height: 79px;
+    width: 40%;
+    left: 8%;
+    top: 7%; }
+    body .button-container .button_latestadventures {
+      background-color: #248a83;
+      text-transform: uppercase;
+      border: none;
+      padding: 15px;
+      font-size: 15px;
+      cursor: pointer;
+      left: 11%;
+      bottom: 82%;
+      position: absolute;
+      text-decoration: none;
+      height: 50px;
+      font-size: 1.1rem;
+      color: white; }
+  body .page-header {
+    margin-bottom: 40px;
+    padding-bottom: 40px; }
+    body .page-header p {
+      text-align: center;
+      line-height: 1.75;
+      color: #404040; }
+  body .dash-border {
+    width: 91%;
+    height: 1px;
+    margin: 0px auto;
+    border-bottom: 1px dashed #c8c8c8; }
+  body .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    margin-left: -20px;
+    margin-left: -20px;
+    margin-bottom: 80px;
+    padding-right: 50px;
+    padding-left: 70px; }
+  body .product-container {
+    border: 1px solid #e1e1e1; }
+  body .photo {
+    background-color: #e1e1e1; }
+  body .product img {
+    height: 234px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  body .product-info {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none; }
+  body .product-info:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: "..................................................."; }
+  body .product-title {
+    display: inline;
+    padding-right: 0.33em; }
+  body .product-title,
+  body .product-price {
+    background: white; }
+  body .product-price {
+    float: right;
+    padding-left: 0.33em; }
+  body .blog-date {
+    font-size: 16px; }
+  body .single-product-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 200px; }
+  body .product-post-title {
+    color: #d99054;
     text-transform: uppercase;
-    position: absolute;
-    font-weight: 100;
-    height: 45px;
-    color: white;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.grid-item-sky {
-  font-size: 19px;
-  text-align: left;
-  color: white;
-  grid-column: 4 / 5;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/night-sky.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/night-sky.jpg");
-  background-size: cover, cover;
-  background-position: center,  center;
-  background-repeat: no-repeat, no-repeat;
-  position: relative; }
-  .grid-item-sky .button_sky {
-    border: 1px solid #ffffff;
-    background-color: transparent;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: bold; }
+  body .single-product-photo img {
+    width: 59%;
+    height: 330px;
+    -o-object-fit: none; }
+  body .single-product-info {
+    padding-left: 20px; }
+  body .single-product-price {
+    font-size: 23px; }
+  body .social {
+    word-spacing: 20px;
+    padding-top: 20px; }
+  body .social-button {
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 7px;
+    color: black;
+    word-spacing: 4px;
+    display: inline-block;
+    width: 27%;
+    height: 37px;
+    text-align: center;
     text-transform: uppercase;
+    font-size: 14px;
+    width: 27%;
+    height: 37px; }
+  body .social-button:visited {
+    color: #000; }
+  body .social-button:hover {
+    background-color: #248a83;
+    color: #ffffff; }
+  body .blogpost {
+    width: 9%; }
+  body .blog-title {
     position: absolute;
-    font-weight: 100;
-    height: 45px;
-    color: white;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-
-.button-container {
-  position: relative;
-  height: 79px;
-  width: 40%;
-  top: 20px; }
-
-.button_latestadventures {
-  background-color: #248a83;
-  text-transform: uppercase;
-  border: none;
-  padding: 15px;
-  font-size: 15px;
-  cursor: pointer;
-  left: 29%;
-  bottom: 7%;
-  position: absolute;
-  text-decoration: none;
-  height: 50px;
-  font-size: 1.1rem;
-  color: white !important; }
-
-.page-header {
-  margin-bottom: 20px;
-  padding-bottom: 40px;
-  border-bottom: 1px dashed #c8c8c8; }
-
-.product-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  list-style: none;
-  margin-left: -20px; }
-
-.product-container {
-  border: 1px solid #e1e1e1; }
-
-.photo {
-  background-color: #e1e1e1; }
-
-.product img {
-  height: 234px;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-.product-info {
-  max-width: 40em;
-  padding: 0;
-  overflow-x: hidden;
-  list-style: none; }
-
-.product-info:before {
-  float: left;
-  width: 0;
-  white-space: nowrap;
-  content: "..................................................."; }
-
-.product-title {
-  display: inline;
-  padding-right: 0.33em; }
-
-.product-title,
-.product-price {
-  background: white; }
-
-.product-price {
-  float: right;
-  padding-left: 0.33em; }
+    background-color: #248a83;
+    color: #ffff;
+    /* max-width: 75%; */
+    top: 0;
+    margin-top: 92px;
+    height: 90px;
+    width: 40%;
+    text-transform: uppercase; }
+  body .blog-date-comment {
+    background-color: #248a83;
+    color: #ffff;
+    top: 109%;
+    font-size: 16px;
+    height: 24px;
+    width: 30.4%;
+    left: 26.7%;
+    position: absolute; }
+  body .blog-date-comment a {
+    text-decoration: none;
+    color: #ffff; }
+  body .blog-date {
+    font-size: 16px; }
+  body .blog-content {
+    text-align: left; }
+  body .social ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  body .border {
+    height: 1px;
+    border: 2px solid #c8c8c8; }
+  body .aboutpage-title {
+    font-size: 34px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black; }
+  body .about-content > h2 {
+    color: #2f1339;
+    font-size: 34px;
+    font-weight: bolder; }
+  body .about-content p {
+    text-align: center; }
+  body .findus-title {
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 39px;
+    color: #404040;
+    padding-left: 40px;
+    letter-spacing: 2px; }
+  body .findus-content > h2 {
+    color: #2f1339;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 2px; }
+  body .cat-links {
+    text-transform: uppercase; }
+  body .cat-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #248a83; }
+  body .tags-links {
+    text-transform: uppercase; }
+  body .tags-links a {
+    text-decoration: none;
+    color: #248a83; }

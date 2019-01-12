@@ -35,7 +35,7 @@ get_header(); ?>
                         <img class ="icon" src="<?php echo get_template_directory_uri() . '/images/' . $term->name; ?>.svg" /> 
                              <p><?php echo $term->description; ?></p>
 
-                             <a href="<?php echo get_term_link($term)?>" button class="button_doStuff"><?php echo $term ->name . ' ' . 'Stuff'; ?></a>
+                             <a href="<?php echo get_term_link($term)?>" button class="button_shopStuff"><?php echo $term ->name . ' ' . 'Stuff'; ?></a>
                              
                     </div>
                     <?php }?>
@@ -71,22 +71,22 @@ get_header(); ?>
                 <div class="grid-container">
                     <div class="grid-item-canoe"> 
                         <h3>Getting Back to Nature in a Canoe</h3>
-                        <a href =""><img class ="" alt=""/></a>
+                      
                         <input type="button" class="button_canoe" value="Read More"/>  
                     </div>
                     <div class="grid-item-beach">
                         <h3> A Night with Friends at the Beach</h3>
-                        <a href =""><img class ="" alt=""/></a>
+                      
                         <input type="button" class="button_beach" value="Read More"/>  
                     </div>
                     <div class="grid-item-mountain">
                         <h3> Taking in the View at Big Mountain</h3>
-                        <a href =""><img class ="" alt=""/></a>
+                      
                         <input type="button" class="button_mountain" value="Read More"/>  
                     </div>
                     <div class="grid-item-sky">
                         <h3> Star-Gazing at the Night Sky</h3>
-                        <a href =""><img class ="" alt=""/></a>
+                      
                         <input type="button" class="button_sky" value="Read More"/>  
                     </div>
                 </div>

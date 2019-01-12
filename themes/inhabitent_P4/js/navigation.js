@@ -4,6 +4,13 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
+$(function () {
+ 
+
+  $('.header_logo_menu').on('click', '.open-search', function() {
+    $('[name="searchForm"]').toggleClass('show')
+  });
+
 (function() {
   let container, button, menu, links, i, len;
 
@@ -107,3 +114,4 @@
     }
   })(container);
 })();
+});

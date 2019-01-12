@@ -6,21 +6,24 @@
  */
 
 ?>
-
+<div class ="mainmain">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<header class="aboutpage-title">
-			
-				<?php the_title(); ?>
-</header><!-- .entry-header -->
+    <header class="findus-title">
+	    <?php the_title(); ?>
+    </header><!-- .entry-header -->
 
-	<div class="about-content">
-	<?php the_content(); ?>
+	<div class="findus-content">
+         <?php the_content(); ?> 
+	
+    
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
 			) );
-		?>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+        ?>
+        </div><!-- .entry-content -->
+</article>
+<!-- #post-## -->
+            </div>

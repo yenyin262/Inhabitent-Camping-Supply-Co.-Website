@@ -4,6 +4,10 @@
  *
  * @package RED_Starter_Theme
  */
+?>
+ <div class="green-header">
+
+	 <?php
 
 get_header(); ?>
 
@@ -27,9 +31,10 @@ get_header(); ?>
 				<p><?php echo $taxonomy->description; ?></p>
                 <div class="page-categories"> 
  
-               
+			
                     </div>
-                     
+					<div class="dash-border">
+                    </div>
 			
 			</header><!-- .page-header -->
 
@@ -62,5 +67,5 @@ get_header(); ?>
 
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>
-
+</div>
 

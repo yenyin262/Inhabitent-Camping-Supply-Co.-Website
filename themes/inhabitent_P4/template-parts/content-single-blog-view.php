@@ -19,7 +19,7 @@
 		<?php the_title( '<h1 class="blog-title">', '</h1>' ); ?>
 
 		<div class="blog-date-comment">
-     <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> 
+   <span class="blog-date">  <?php red_starter_posted_on(); ?> </span>/ <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> 
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -35,75 +35,10 @@
 
 	<footer class="entry-footer">
         <?php red_starter_entry_footer(); ?>
-        <section class="social">
-        <ul>
-
-        
-            <li><button class="socialname"><i class="fab fa-facebook-f"></i>    Like</button></li>
-            <li><button class="socialname"><i class="fab fa-twitter"></i>       Tweet</button></li>
-            <li><button class="socialname"><i class="fab fa-pinterest"></i>      Pin</button></li>
-        </ul>
+        <div class=social>
+    <a class="social-button blogpost" href=""><i class="fab fa-facebook-f"></i> Like</a>
+    <a class="social-button blogpost" href=""><i class="fab fa-twitter"></i> Tweet</a>
+    <a class="social-button blogpost" href=""><i class="fab fa-pinterest"></i> Pin</a>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
-<style> 
-.blog-title { 
-    position: absolute;
-    background-color: #248a83; 
-    color: #ffff;
-    /* max-width: 75%; */
-    top: 0;
-    margin-top: 92px;
-    height: 90px;
-    width: 40%;
-    text-transform: uppercase;
-
-}
-
-.blog-date-comment { 
-    background-color: #248a83;
-    color: #ffff;
-    position: absolute;
-    /* bottom: -126px; */
-    top: 132%;
-    font-size: 16px;
-    height: 24px;
-    width: 30.1%;
-    left: 27%;
-}
-
-.blog-date-comment a {
-    text-decoration:none;
-    color: #ffff;
-} 
-
-.blog-date { 
-    font-size: 16px;
-}
-.blog-content { 
-    text-align:left;
-}
-
-.social ul {
-    list-style:none;
-    display:flex;
-}
-
-.socialname { 
-    background-color: #248a83;
-    /* color: black; */
-    box-shadow: none;
-    /* padding-right: 20px; */
-    margin-right: 20px;
-    height: 36px;
-    cursor: pointer;
-    line-height: 1;
-    width: 100%;
-    text-transform: uppercase;
-    color: white;
-}background-color: #248a83;
-    color:black;
-    box-shadow:none;
-    padding-right:20px;
-}
-</style>

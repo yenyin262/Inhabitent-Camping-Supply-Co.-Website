@@ -24,7 +24,7 @@
 						<h3>Business Hours</h3>
 						<p> <b>Monday-Friday:</b> 9am to 5pm<br class="hours">
 						   <b> Saturday:</b> 10am to 2pm <br class="hours">
-						 	<b>Sunday:Closed</b> </p>
+						 	<b>Sunday: Closed</b> </p>
 					</div>
 					<div class ="footer-logo-wrapper">
 					<a href =""><img class ="footer-logo" src="http://localhost:8888/Project_4/wp-content/themes/inhabitent_P4/images/inhabitent-logo-text.svg" alt="footer_logo."/></a>
