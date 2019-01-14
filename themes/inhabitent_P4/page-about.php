@@ -5,7 +5,7 @@
  * @package RED_Starter_Theme
  */
 ?>
- <div class="green-header">
+ <div class="white-header">
 
 	 <?php
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="title"><?php get_template_part( 'template-parts/content', 'page' ); ?></div>
+				<div class="title"><?php get_template_part( 'template-parts/content-page' ); ?></div>
 
 			<?php endwhile; // End of the loop. ?>
 

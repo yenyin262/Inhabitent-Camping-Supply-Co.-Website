@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class ="mainmain">
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <header class="findus-title">
@@ -26,4 +26,4 @@
         </div><!-- .entry-content -->
 </article>
 <!-- #post-## -->
-            </div>
+     

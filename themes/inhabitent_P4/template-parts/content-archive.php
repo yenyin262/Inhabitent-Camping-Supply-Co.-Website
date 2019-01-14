@@ -13,19 +13,18 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( sprintf( '<h2 class="home-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		
+		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="blog-entry-meta">
+        <div class="blog-entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="blog-content">
-		<?php the_excerpt(); ?>
+	
+    <div class="blog-content">
+        <?php the_excerpt(); ?>
 		<a class="journal-button journal-home" href="<?php echo get_permalink()?>">Read More →</a>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

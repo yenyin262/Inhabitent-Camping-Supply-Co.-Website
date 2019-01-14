@@ -23,7 +23,7 @@ get_header(); ?>
 			    
           
 
-            <div class=shop_container>
+            <div class="shop_container max-width-container">
                 <h1>Shop Stuff</h1>
                 <div class="shopStuff">
                    
@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php $terms = get_terms( 'product-type' ); // returns an array of posts
                          ?>
                     <?php foreach ( $terms as $term ) { ?>
-                     <div class="grid-item">
+                     <div class="item">
                         <img class ="icon" src="<?php echo get_template_directory_uri() . '/images/' . $term->name; ?>.svg" /> 
                              <p><?php echo $term->description; ?></p>
 
@@ -42,7 +42,7 @@ get_header(); ?>
             </div>
                     </div>
 
-            <div class="inhabitent">
+            <div class="inhabitent-main-container max-width-container">
                 <h2>Inhabitent Journal</h2>
                 <div class="inhabitent-journal-container">
                 
@@ -54,7 +54,7 @@ get_header(); ?>
 
                         <?php /* Content from your array of post results goes here */ ?>
                         <div class="journalHomepage"> 
-                            <?php  the_post_thumbnail( 'large' );   red_starter_posted_on(); ?> <span class="comments">/</span> <span class="comments"><?php comments_number() ;  ?></span>
+                            <?php  the_post_thumbnail( 'large' );?>  <span class="post-date"> <?php  red_starter_posted_on(); ?></span> <span class="comments">/</span> <span class="comments"><?php comments_number() ;  ?></span>
                             <h3 class="journal-title"><a href="<?php echo get_permalink()?>"><?php the_title() ?></a></h3>
                             <a class="journal-button" href="<?php echo get_permalink()?>">Read Entry</a>
                         </div> 

@@ -18,6 +18,46 @@ body {
     font-family: "Novecento sans wide", "sans-serif";
   }
 
+  .site-widget { 
+    display: flex;
+  }
+
+  .content-widget { 
+    width: 130%;
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+
+  .hero-image-header {
+    height: 100vh;
+    color: #fff;
+    top: 6px;
+    /* width: 100vw; */
+    z-index: -1;
+    /* margin-bottom: 29px; */
+    position: relative;
+    margin-top: -47px;
+    /* border: none; */
+   }
+ 
+
+
+  .widget-wrapper { 
+    padding-top: 51px;
+    padding-left: 40px;
+    width: 72%;
+    border-left: 1px solid #e1e1e1;
+  }
+
+  .widget { 
+    font-family: 'Merriweather';
+    line-height: 1.75;
+  }
+  .max-width-container {
+  max-width: 1120px;
+  margin: auto;
+  }
+//FRONT PAGE STYLING
   .header_logo_menu {
     height: 40px;
     display: flex;
@@ -33,10 +73,22 @@ body {
     top: 1%;
     position: absolute;
   }
-  .main-navigation {
-    margin-left: 69%;
-    position: absolute;
+
+  .nav-search-wrapper { 
+    height: 30px;
+    /* margin-left: 65%; */
+    /* position: absolute; */
+    width: 38%;
+    /* float: right; */
+    display: flex;
+    /* text-align: right; */
+    justify-content: flex-end;
+    margin-right: 13%;
   }
+  // .main-navigation {
+  //   // margin-left: 69%;
+  //   // position: absolute;
+  // }
   .main-navigation li {
     padding-right: 10px;
   }
@@ -45,10 +97,14 @@ body {
     color: white;
   }
 
-  .searchForm {
-    position: absolute;
-    right: 4%;
-  }
+  // .searchForm {
+
+  // position: relative;
+  // right: 10%;
+  // }
+  // position: absolute;
+  //   /* left: 30%; */
+  //   right: 10%;
   .open-search {
     color: white;
     cursor: pointer;
@@ -84,20 +140,6 @@ body {
     margin-top: 5%;
   }
 
-  .green-header {
-    .header_logo_menu {
-      border-bottom: 1px solid #e1e1e1;
-      .main-navigation a {
-        color: #248a83;
-      }
-      .open-search {
-        color: #248a83;
-      }
-    }
-  }
-
-  
-
   .shopStuff {
     display: flex;
     flex-direction: row;
@@ -111,25 +153,19 @@ body {
     text-align: center;
     font-size: 40px;
   }
- 
-  .page-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 200;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-  }
+
+
 
   .shopStuff p {
     color: #404040;
   }
 
-  .grid-item {
+
+ .item {
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
     text-align: center;
-    font-family: "Merriweather";
+    font-family: 'Merriweather'; 
     padding-top: 20px;
     max-width: 22.2%;
     position: relative;
@@ -138,11 +174,11 @@ body {
     margin-left: auto;
   }
 
-  .grid-item:hover {
+  .item:hover {
     border: 1px solid #d99054;
   }
 
-  .grid-item img {
+  .item img {
     width: 22%;
   }
 
@@ -161,11 +197,26 @@ body {
     height: 16%;
   }
 
-  .grid-item a {
+  .item a {
     color: white;
     text-decoration: none;
     font-family: "Novecento sans wide";
   }
+
+
+
+
+
+  .inhabitent-main-container h2 {
+    font-size: 2.4rem;
+    font-family: "Novecento sans wide";
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
 
   .inhabitent-journal-container {
     display: flex;
@@ -187,46 +238,8 @@ body {
     border-bottom: 5px solid #e1e1e1;
   }
 
-  .inhabitent h2 {
-    font-size: 2.4rem;
-    font-family: "Novecento sans wide";
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: 400;
-  }
-
-  .journal-title {
-    font-size: 1.2rem;
-    padding-left: 19px;
-    line-height: 1.25;
-  }
-
-  .journal-title a {
-    text-decoration: none;
-    color: #248a83;
-  }
-
-  .page-categories {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    padding-bottom: 40px;
-  }
-
-  .taxonomy-title {
-    padding-right: 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-left: 44px;
-  }
-
-  .page-categories a {
-    color: #2488a3;
-  }
-
-  .posted-on {
+  // .posted-on
+  .post-date {
     padding-left: 20px;
     font-size: 10px;
   }
@@ -234,6 +247,19 @@ body {
     font-size: 10px;
   }
 
+  .journal-title {
+    font-size: 1.2rem;
+    padding-left: 19px;
+    line-height: 1.25;
+    font-family: "Novecento sans wide bold";
+  }
+
+  .journal-title a {
+    text-decoration: none;
+    color: #248a83;
+  }
+
+  
   .journal-button {
     text-decoration: none;
     border: solid 1px black;
@@ -253,88 +279,11 @@ body {
     color: #ffffff;
     border: none;
   }
+  
 
-  .site-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-image: url("../../images/dark-wood@2x.png");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    background-repeat: no-repeat;
-  }
-
-  .contact-info {
-    margin-top: 2%;
-    flex-basis: 25%;
-  }
-
-  .contact-info li {
-    list-style: none;
-    color: #ffffff;
-    line-height: 1.75;
-  }
-
-  .contact-info h3 {
-    color: #d99054;
-    text-transform: uppercase;
-  }
-
-  .fa-phone {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-  .social-info {
-    display: inline-block;
-    font-size: 24px;
-    color: white;
-    letter-spacing: 10px;
-  }
-  .business-hours h3 {
-    color: #d99054;
-    text-transform: uppercase;
-  }
-
-  .business-hours {
-    color: #ffffff;
-    margin-top: 2%;
-    line-height: 1.75;
-    flex-basis: 25%;
-  }
-  .business-hours p {
-    color: #ffffff;
-  }
-  .footer-logo-wrapper {
-    margin-top: 3%;
-    flex-basis: 30%;
-  }
-
-  .footer-logo {
-    width: 70%;
-  }
-
-  .copyright {
-    font-family: "Novecento sans wide", sans-serif;
-    color: white;
-    flex-basis: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-  }
-  .copyright p {
-    font-family: "Novecento sans wide", sans-serif;
-    color: white;
-  }
-  .copyright-year {
-    font-size: 0.8rem;
-    font-weight: 100;
-  }
-
-  .latest-adventures-section {
-    text-align: center;
-    text-transform: uppercase;
-
+.latest-adventures-section {
+  text-align: center;
+  text-transform: uppercase;
     font-family: "Novecento sans wide";
     height: 887px;
     letter-spacing: 2px;
@@ -527,75 +476,223 @@ body {
     }
   }
 
-  .page-header {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    p {
-      text-align: center;
-      line-height: 1.75;
-      color: #404040;
+  
+//FOOTER STYLING
+
+  .site-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url("../../images/dark-wood@2x.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+
+  .contact-info {
+    margin-top: 2%;
+    flex-basis: 25%;
+  }
+
+  .contact-info li {
+    list-style: none;
+    color: #ffffff;
+    line-height: 1.75;
+  }
+
+  .contact-info h3 {
+    color: #d99054;
+    text-transform: uppercase;
+  }
+
+  .fa-phone {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .social-info {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    letter-spacing: 10px;
+  }
+  .business-hours h3 {
+    color: #d99054;
+    text-transform: uppercase;
+  }
+
+  .business-hours {
+    color: #ffffff;
+    margin-top: 2%;
+    line-height: 1.75;
+    flex-basis: 25%;
+  }
+  .business-hours p {
+    color: #ffffff;
+  }
+  .footer-logo-wrapper {
+    margin-top: 3%;
+    flex-basis: 30%;
+  }
+
+  .footer-logo {
+    width: 70%;
+  }
+
+  .copyright {
+    font-family: "Novecento sans wide", sans-serif;
+    color: white;
+    flex-basis: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .copyright p {
+    font-family: "Novecento sans wide", sans-serif;
+    color: white;
+  }
+  .copyright-year {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+// archive-product styling
+
+.white-header {
+  .header_logo_menu {
+    border-bottom: none;
+    .main-navigation a {
+      color:#ffffff;
+    }
+    .open-search {
+      color: #ffffff;
     }
   }
-  .dash-border {
-    width: 91%;
-    height: 1px;
-    margin: 0px auto;
-    border-bottom: 1px dashed #c8c8c8;
-  }
+}
 
-  .product-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    list-style: none;
-    margin-left: -20px;
-    margin-left: -20px;
-    margin-bottom: 80px;
-    padding-right: 50px;
-    padding-left: 70px;
-  }
 
-  .product-container {
-    border: 1px solid #e1e1e1;
+.green-header {
+  .header_logo_menu {
+    border-bottom: 1px solid #e1e1e1;
+    .main-navigation a {
+      color: #248a83;
+    }
+    .open-search {
+      color: #248a83;
+    }
   }
+}
 
-  .photo {
-    background-color: #e1e1e1;
-  }
 
-  .product img {
-    height: 234px;
-    object-fit: cover;
-  }
 
-  .product-info {
-    max-width: 40em;
-    padding: 0;
-    overflow-x: hidden;
-    list-style: none;
+.page-header {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  p {
+    text-align: center;
+    line-height: 1.75;
+    color: #404040;
   }
+}
 
-  .product-info:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content: "...................................................";
-  }
 
-  .product-title {
-    display: inline;
-    padding-right: 0.33em;
-  }
+ 
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+  text-align: center;
+  font-family: "Novecento sans wide bold",sans-serif;
+  font-size: 40px;
+}
 
-  .product-title,
-  .product-price {
-    background: white;
-  }
 
-  .product-price {
-    float: right;
-    padding-left: 0.33em;
-  }
+
+
+.page-categories {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+
+
+.page-categories a {
+  color: #2488a3;
+}
+.taxonomy-title {
+  padding-right: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 44px;
+  font-family: "Novecento sans wide";
+}
+
+
+.dash-border {
+  width: 91%;
+  height: 1px;
+  margin: 0px auto;
+  border-bottom: 1px dashed #c8c8c8;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+  margin-left: -20px;
+  margin-left: -20px;
+  margin-bottom: 80px;
+  padding-right: 50px;
+  padding-left: 70px;
+}
+
+.product-container {
+  border: 1px solid #e1e1e1;
+}
+
+
+.product img {
+  height: 234px;
+  object-fit: cover;
+}
+
+.photo {
+  background-color: #e1e1e1;
+}
+.product-info {
+  max-width: 40em;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+.product-info:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "...................................................";
+}
+
+.product-title {
+  display: inline;
+  padding-right: 0.33em;
+}
+
+.product-title,
+.product-price {
+  background: white;
+}
+
+.product-price {
+  float: right;
+  padding-left: 0.33em;
+}
+
+
+// single product-item view
 
   .blog-date {
     font-size: 16px;
@@ -608,14 +705,6 @@ body {
     margin-right: 40px;
     margin-bottom: 200px;
   }
-
-  .product-post-title {
-    color: #d99054;
-    text-transform: uppercase;
-    font-size: 38px;
-    letter-spacing: 2px;
-    font-weight: bold;
-  }
   .single-product-photo img {
     width: 59%;
     height: 330px;
@@ -625,6 +714,16 @@ body {
   .single-product-info {
     padding-left: 20px;
   }
+
+
+  .product-post-title {
+    color: #d99054;
+    text-transform: uppercase;
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
 
   .single-product-price {
     font-size: 23px;
@@ -659,31 +758,49 @@ body {
   }
 
   .blogpost {
-    width: 9%;
+    width: 17%;
   }
+//blog homepage
 
+.home-entry-title h2 {
+background-color: #248a83;
+color: #fff;
+font-size: 33.6px;
+left: 10.8%;
+padding: 20px 2px;
+position: absolute;
+margin-top: 2.25rem;
+max-width: 75%;
+top: 46px;
+text-decoration: none;
+font-family: "Novecento sans wide bold";
+}
   //style blog
 
+  .blog-entry-header {
+    padding-left: 120px;
+  }
   .blog-title {
     position: absolute;
     background-color: #248a83;
     color: #ffff;
     /* max-width: 75%; */
     top: 0;
-    margin-top: 92px;
+    margin-top: 113px;
     height: 90px;
     width: 40%;
     text-transform: uppercase;
+    font-family: "Novecento sans wide bold";
   }
 
   .blog-date-comment {
     background-color: #248a83;
     color: #ffff;
-    top: 109%;
+    top: 90.8%;
     font-size: 16px;
     height: 24px;
     width: 30.4%;
-    left: 26.7%;
+    left: 29.7%;
     position: absolute;
   }
 
@@ -697,52 +814,22 @@ body {
   }
   .blog-content {
     text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left:120px;
   }
 
-  .social ul {
-    list-style: none;
-    display: flex;
+
+  .journal-home {
+    margin-left: 0;
   }
 
-  .border {
-    height: 1px;
-    border: 2px solid #c8c8c8;
+
+  .blog-entry-footer { 
+    padding-left: 120px;
   }
 
-  .aboutpage-title {
-    font-size: 34px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: black;
-  }
-
-  .about-content > h2 {
-    color: #2f1339;
-    font-size: 34px;
-    font-weight: bolder;
-  }
-
-  .about-content p {
-    text-align: center;
-  }
-  .findus-title {
-    padding-top: 40px;
-    font-weight: bold;
-    font-size: 39px;
-    color: #404040;
-    padding-left: 40px;
-    letter-spacing: 2px;
-  }
-
-  .findus-content > h2 {
-    color: #2f1339;
-    font-size: 34px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-
-  .cat-links {
+.cat-links {
     text-transform: uppercase;
   }
   .cat-links a {
@@ -758,4 +845,169 @@ body {
     text-decoration: none;
     color: #248a83;
   }
+}
+
+
+
+  .social ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .comments-area { 
+    padding-left:120px;
+    input[type=submit] { 
+      background-color: #248a83;
+      text-transform: uppercase;
+      border: none;
+      padding: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #fff;
+      box-shadow: none;
+      font-family: 'Novecento sans wide',sans-serif;
+      text-decoration: none;
+  }
+  }
+
+  textarea { 
+    background-color: #e1e1e1;
+  }
+
+  input[type=text], input[type=email], input[type=url] { 
+    background-color: #e1e1e1;
+  }
+  
+  
+
+  .border {
+    height: 1px;
+    border: 2px solid #c8c8c8;
+  }
+//about page 
+  
+  // .about-content > :not(header) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   max-width: 800px;
+  // }
+
+  .about-content > h2 {
+    // color: #2f1339;
+    // font-size: 34px;
+    // font-weight: bolder;
+    color: #2f1339;
+    font-size: 34px;
+    /* font-weight: bolder; */
+    // max-width: 1120px;
+    // margin: auto;
+    letter-spacing: 2px;
+    
+    font-family: "Novecento sans wide bold",sans-serif;
+  
+  }
+  .about-content > p   {
+    text-align: center;
+    max-width: 1120px;
+    margin: auto;
+    line-height: 1.75;
+  
+}
+
+  .findus-title {
+  
+  
+    font-family: "Novecento sans wide bold",sans-serif;
+    font-size: 39px;
+    color: #404040;
+    padding-left: 40px;
+    letter-spacing: 2px;
+  }
+
+  .findus-content h2 {
+    color: #2f1339;
+    font-size: 34px;
+    font-family: "Novecento sans wide bold",sans-serif;
+    letter-spacing: 2px;
+  }
+
+  
+.widget-title { 
+    clear: both;
+    font-family: "Novecento sans wide bold",sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-widget { 
+  color: #2488a3;
+}
+
+
+// archive page 
+.archive-title {
+clear: both;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: "Novecento sans wide bold",sans-serif; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing:2px;
+    font-size: 2.4rem;
+}
+
+.archivepage-header { 
+  padding-left: 120px;
+}
+
+.widget-title  {
+   a { 
+list-style: none;
+   }
+}
+//search
+
+.search-title { 
+  padding-left: 120px;
+  font-family: 'Novecento sans wide bold',sans-serif;
+  text-transform: uppercase;
+  font-size: 39px;
+}
+.search-results-title { 
+  padding-left:122px;
+  
+a { 
+  text-decoration: none;
+  font-family: "Novecento sans wide bold",sans-serif; 
+  color: #248a83;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+}
+.search-summary { 
+  padding-left:120px;
+  line-height: 1.75;
+}
+.search-meta { 
+  padding-left: 120px;
+}
+.page-numbers { 
+  display: inline-block;
+  background-color: #248a83;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 12px;
+    margin-right: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+.search-pagination {
+  margin-left: 120px;
+  border-top: solid 1px #e1e1e1;
+  margin-bottom: 50px;
+
+  padding-top: 20px;
+
+
 }

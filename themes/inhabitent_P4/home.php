@@ -3,13 +3,15 @@
 <?php
 
 get_header(); ?>
-<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area content-widget">
+
+		<main id="main" class="site-main " role="main">
         <?php if ( have_posts() ) : ?>
 
 <?php if ( is_home() && ! is_front_page() ) : ?>
     <header>
         <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+   
     </header>
 <?php endif; ?>
 
@@ -24,12 +26,15 @@ get_header(); ?>
 
 <?php else : ?>
 
-<?php get_template_part( 'template-parts/content-homepage', 'none' ); ?>
+<?php get_template_part( 'template-parts/content-homepage' ); ?>
 
 <?php endif; ?>
 		</main><!-- #main -->
     </div><!-- #primary -->
     
-        <?php get_sidebar(); ?>    
+    <div class="widget-wrapper">
+    <?php dynamic_sidebar(); ?>
+        <?php// get_sidebar(); ?>    
+    </div>
     <?php get_footer(); ?>  
 </div>

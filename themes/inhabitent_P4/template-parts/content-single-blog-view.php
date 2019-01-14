@@ -11,7 +11,7 @@
 
    
 
-	<header class="entry-header">
+	<header class="blog-entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
@@ -33,7 +33,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="blog-entry-footer">
         <?php red_starter_entry_footer(); ?>
         <div class=social>
     <a class="social-button blogpost" href=""><i class="fab fa-facebook-f"></i> Like</a>

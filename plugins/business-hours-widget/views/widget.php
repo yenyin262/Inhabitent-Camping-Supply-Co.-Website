@@ -4,7 +4,7 @@
 
 <p>
     <span class="business-weekdays">
-         Monday-Friday:
+       <b>  Monday-Friday:</b>
         <?php echo  $weekdays; ?>
        
     </span>
@@ -15,17 +15,17 @@
 <?php if(strlen(trim($saturday)) > 0): ?>
 <p>
     <span class="business-saturday">
-        Saturday:
+        <b>Saturday:</b>
         <?php echo  $saturday; ?>
     </span>
 </p>
 <?php endif; ?>
 
 
-<?php if(strlen(trim($sundayy)) > 0): ?>
+<?php if(strlen(trim($sunday)) > 0): ?>
 <p>
     <span class="business-sunday">
-        Sunday:
+       <b> Sunday:</b>
         <?php echo  $sunday; ?>
     </span>
 </p>

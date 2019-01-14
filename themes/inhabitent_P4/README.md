@@ -1,8 +1,29 @@
-# RED Starter
+#Inhabitent Camping Supply Co. Website
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+An Online Camping Store Website consisting of blogposts, camping product accessoriesa and  brief information on the company. The website is built on a custom Wordpress starter theme. 
 
-## Installation
+#Technologies applied to the website 
+
+1. Wordpress
+2. PHP
+3. CSS
+4. SASS
+5. HTML
+6. jQuery
+7. Gulp 
+8. MAMP database
+9. Plugins
+10. Javascript
+
+#Functional Usage:- 
+
+1. Used Wordpress as a content management system
+2. About Page, Find Us Page, Home Page - consists of a static page
+3. Built a Product-Type & Product Archive Page with a single product view
+4. Custom Widget
+
+
+## Installation instructions
 
 ### 1. Download me (don't clone me!)
 

@@ -4,17 +4,18 @@
  *
  * @package RED_Starter_Theme
  */
+?>
+ <div class="green-header">
+<?php get_header(); ?>
 
-get_header(); ?>
-
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-widget">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<header class="archivepage-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="archive-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -23,7 +24,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content-archive' );
 				?>
 
 			<?php endwhile; ?>
@@ -32,12 +33,16 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content-archive' ); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php //get_sidebar(); ?>
+<div class="widget-wrapper">
+<?php dynamic_sidebar(); ?>
+</div> 
 <?php get_footer(); ?>
+</div>

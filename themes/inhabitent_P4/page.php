@@ -10,8 +10,8 @@
 	 <?php
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area content-widget">
+		<main id="main" class="site-main " role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -21,8 +21,10 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<div class="widget-wrapper">
 <?php dynamic_sidebar(); ?>
+</div> 
+
 <?php get_footer(); ?>
 </div>
 

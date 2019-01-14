@@ -9,10 +9,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-<header class="aboutpage-title">
-			
-				<?php the_title(); ?>
-</header><!-- .entry-header -->
+
+<?php //the_title(); ?>
+
 
 	<div class="about-content">
 	<?php the_content(); ?>
