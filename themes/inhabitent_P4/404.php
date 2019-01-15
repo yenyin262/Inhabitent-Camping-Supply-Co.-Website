@@ -6,18 +6,21 @@
  *
  * @package RED_Starter_Theme
  */
+?>
+ <div class="green-header">
 
+	 <?php
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-widget">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+				<header class="error-page-header">
+					<h1 class="error-page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="error-page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
 					<?php get_search_form(); ?>
@@ -51,5 +54,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<div class="widget-wrapper">
+<?php dynamic_sidebar(); ?>
+</div> 
+
 
 <?php get_footer(); ?>

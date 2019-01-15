@@ -1,8 +1,8 @@
-#Inhabitent Camping Supply Co. Website
+# Inhabitent Camping Supply Co. Website
 
 An Online Camping Store Website consisting of blogposts, camping product accessoriesa and  brief information on the company. The website is built on a custom Wordpress starter theme. 
 
-#Technologies applied to the website 
+# Technologies applied to the website 
 
 1. Wordpress
 2. PHP
@@ -15,7 +15,7 @@ An Online Camping Store Website consisting of blogposts, camping product accesso
 9. Plugins
 10. Javascript
 
-#Functional Usage:- 
+# Functional Usage:- 
 
 1. Used Wordpress as a content management system
 2. About Page, Find Us Page, Home Page - consists of a static page

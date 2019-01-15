@@ -20,11 +20,12 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="blog-entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
+		
 	</header><!-- .entry-header -->
 
-	<div class="blog-content">
+	<div class="blog-home-content">
 		<?php the_excerpt(); ?>
 		<a class="journal-button journal-home" href="<?php echo get_permalink()?>">Read More →</a>
 	</div><!-- .entry-content -->

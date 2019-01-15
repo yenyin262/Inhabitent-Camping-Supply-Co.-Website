@@ -16,10 +16,10 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="blog-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="home-entry-title">', '</h1>' ); ?>
 
-		<div class="blog-date-comment">
-   <span class="blog-date">  <?php red_starter_posted_on(); ?> </span>/ <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> 
+		<div class="blog-entry-meta">
+    <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>  
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

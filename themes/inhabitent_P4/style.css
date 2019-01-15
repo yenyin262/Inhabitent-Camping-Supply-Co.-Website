@@ -726,35 +726,6 @@ body {
   body h5,
   body h6 {
     font-family: "Novecento sans wide", "sans-serif"; }
-  body .site-widget {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  body .content-widget {
-    width: 130%;
-    padding-top: 40px;
-    padding-right: 40px; }
-  body .hero-image-header {
-    height: 100vh;
-    color: #fff;
-    top: 6px;
-    /* width: 100vw; */
-    z-index: -1;
-    /* margin-bottom: 29px; */
-    position: relative;
-    margin-top: -47px;
-    /* border: none; */ }
-  body .widget-wrapper {
-    padding-top: 51px;
-    padding-left: 40px;
-    width: 72%;
-    border-left: 1px solid #e1e1e1; }
-  body .widget {
-    font-family: 'Merriweather';
-    line-height: 1.75; }
-  body .max-width-container {
-    max-width: 1120px;
-    margin: auto; }
   body .header_logo_menu {
     height: 40px;
     display: -webkit-box;
@@ -772,14 +743,10 @@ body {
     position: absolute; }
   body .nav-search-wrapper {
     height: 30px;
-    /* margin-left: 65%; */
-    /* position: absolute; */
     width: 38%;
-    /* float: right; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* text-align: right; */
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -788,11 +755,15 @@ body {
     padding-right: 10px; }
   body .main-navigation a {
     color: white; }
+    body .main-navigation a:hover {
+      color: #2f1339; }
+  body .searchForm {
+    position: relative; }
   body .open-search {
     color: white;
     cursor: pointer;
     padding: 0.5rem; }
-  body input[type=searchForm] {
+  body input[type="searchForm"] {
     border: 0;
     background: transparent;
     font-family: "Novecento Sans web", sans-serif;
@@ -844,7 +815,7 @@ body {
     border: 1px solid #e1e1e1;
     border-top-width: 5px;
     text-align: center;
-    font-family: 'Merriweather';
+    font-family: "Merriweather";
     padding-top: 20px;
     max-width: 22.2%;
     position: relative;
@@ -1083,7 +1054,7 @@ body {
       padding: 15px;
       font-size: 15px;
       cursor: pointer;
-      left: 11%;
+      left: 9%;
       bottom: 82%;
       position: absolute;
       text-decoration: none;
@@ -1113,7 +1084,8 @@ body {
     line-height: 1.75; }
   body .contact-info h3 {
     color: #d99054;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Novecento sans wide bold"; }
   body .fa-phone {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1); }
@@ -1124,7 +1096,8 @@ body {
     letter-spacing: 10px; }
   body .business-hours h3 {
     color: #d99054;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "Novecento sans wide bold"; }
   body .business-hours {
     color: #ffffff;
     margin-top: 2%;
@@ -1171,12 +1144,14 @@ body {
     body .page-header p {
       text-align: center;
       line-height: 1.75;
-      color: #404040; }
+      color: #404040;
+      font-family: "Merriweather";
+      font-size: 16px; }
   body .page-title {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    font-family: "Novecento sans wide bold",sans-serif;
+    font-family: "Novecento sans wide bold", sans-serif;
     font-size: 40px; }
   body .page-categories {
     display: -webkit-box;
@@ -1189,6 +1164,8 @@ body {
     padding-bottom: 40px; }
   body .page-categories a {
     color: #2488a3; }
+    body .page-categories a:hover {
+      color: #2f1339; }
   body .taxonomy-title {
     padding-right: 40px;
     text-transform: uppercase;
@@ -1220,9 +1197,13 @@ body {
     background-color: #e1e1e1; }
   body .product-info {
     max-width: 40em;
-    padding: 0;
+    padding: 6px;
     overflow-x: hidden;
-    list-style: none; }
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  body .hentry {
+    margin: 0; }
   body .product-info:before {
     float: left;
     width: 0;
@@ -1237,8 +1218,6 @@ body {
   body .product-price {
     float: right;
     padding-left: 0.33em; }
-  body .blog-date {
-    font-size: 16px; }
   body .single-product-photo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1326,8 +1305,6 @@ body {
     font-size: 16px; }
   body .blog-content {
     text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
     padding-left: 120px; }
   body .journal-home {
     margin-left: 0; }
@@ -1353,7 +1330,7 @@ body {
 
 .comments-area {
   padding-left: 120px; }
-  .comments-area input[type=submit] {
+  .comments-area input[type="submit"] {
     background-color: #248a83;
     text-transform: uppercase;
     border: none;
@@ -1363,34 +1340,75 @@ body {
     color: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
-    font-family: 'Novecento sans wide',sans-serif;
+    font-family: "Novecento sans wide", sans-serif;
     text-decoration: none; }
 
 textarea {
   background-color: #e1e1e1; }
 
-input[type=text], input[type=email], input[type=url] {
+input[type="text"],
+input[type="email"],
+input[type="url"] {
   background-color: #e1e1e1; }
 
 .border {
   height: 1px;
   border: 2px solid #c8c8c8; }
 
+.hero-image-header {
+  height: 100vh;
+  color: #fff;
+  top: 6px;
+  z-index: -1;
+  position: relative;
+  margin-top: -47px;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: "Novecento sans wide bold"; }
+
 .about-content > h2 {
   color: #2f1339;
   font-size: 34px;
-  /* font-weight: bolder; */
   letter-spacing: 2px;
-  font-family: "Novecento sans wide bold",sans-serif; }
+  font-family: "Novecento sans wide bold", sans-serif; }
 
 .about-content > p {
-  text-align: center;
-  max-width: 1120px;
-  margin: auto;
+  color: #404040;
+  font-family: "Merriweather";
+  font-size: 16px;
+  line-height: 1.75;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+.about-area {
+  margin-bottom: 50px; }
+
+.site-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content-widget {
+  width: 130%;
+  padding-top: 40px;
+  padding-right: 40px; }
+
+.widget-wrapper {
+  padding-top: 51px;
+  padding-left: 40px;
+  width: 72%;
+  border-left: 1px solid #e1e1e1; }
+
+.widget {
+  font-family: "Merriweather";
   line-height: 1.75; }
 
+.max-width-container {
+  max-width: 1120px;
+  margin: auto; }
+
 .findus-title {
-  font-family: "Novecento sans wide bold",sans-serif;
+  font-family: "Novecento sans wide bold", sans-serif;
   font-size: 39px;
   color: #404040;
   padding-left: 40px;
@@ -1399,22 +1417,25 @@ input[type=text], input[type=email], input[type=url] {
 .findus-content h2 {
   color: #2f1339;
   font-size: 34px;
-  font-family: "Novecento sans wide bold",sans-serif;
+  font-family: "Novecento sans wide bold", sans-serif;
   letter-spacing: 2px; }
 
 .widget-title {
   clear: both;
-  font-family: "Novecento sans wide bold",sans-serif;
+  font-family: "Novecento sans wide bold", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
 .contact-widget {
-  color: #2488a3; }
+  color: #2488a3;
+  cursor: pointer; }
+  .contact-widget:hover {
+    color: #2f1339; }
 
 .archive-title {
   clear: both;
   border-bottom: 1px solid #e1e1e1;
-  font-family: "Novecento sans wide bold",sans-serif;
+  font-family: "Novecento sans wide bold", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -1430,7 +1451,7 @@ input[type=text], input[type=email], input[type=url] {
 
 .search-title {
   padding-left: 120px;
-  font-family: 'Novecento sans wide bold',sans-serif;
+  font-family: "Novecento sans wide bold", sans-serif;
   text-transform: uppercase;
   font-size: 39px; }
 
@@ -1438,7 +1459,7 @@ input[type=text], input[type=email], input[type=url] {
   padding-left: 122px; }
   .search-results-title a {
     text-decoration: none;
-    font-family: "Novecento sans wide bold",sans-serif;
+    font-family: "Novecento sans wide bold", sans-serif;
     color: #248a83;
     font-size: 34px;
     text-transform: uppercase; }
@@ -1465,3 +1486,95 @@ input[type=text], input[type=email], input[type=url] {
   border-top: solid 1px #e1e1e1;
   margin-bottom: 50px;
   padding-top: 20px; }
+
+.current {
+  background-color: #808080; }
+
+.error-404 {
+  padding-left: 20px; }
+
+.error-page-title {
+  font-size: 33px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "Novecento sans wide bold", sans-serif; }
+
+fieldset {
+  border: 0; }
+
+.widgettitle {
+  text-transform: uppercase;
+  font-family: "Novecento sans wide bold"; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.cat-item {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #248a83; }
+
+input[type="searchError"] {
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  color: #808080;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
+  height: 39px;
+  border: 1px solid #e1e1e1;
+  padding: 6px; }
+
+.error-page-content {
+  color: #404040;
+  font-family: "Merriweather";
+  font-size: 16px;
+  line-height: 1.75; }
+
+.widget select {
+  max-width: 100%;
+  border: solid 1px #e1e1e1e1;
+  font-family: "Merriweather";
+  line-height: 1.75;
+  font-size: 16px;
+  color: #404040; }
+
+.widget_archive h2 {
+  letter-spacing: 2px; }
+
+.home-entry-title {
+  font-size: 34px;
+  color: #fff;
+  background-color: #248a83;
+  font-size: 33.6px;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  max-width: 47.9%;
+  margin-top: -21.75rem;
+  font-family: 'Novecento sans wide bold';
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+  .home-entry-title a {
+    text-decoration: none;
+    color: white; }
+
+.blog-entry-meta {
+  background-color: #248a83;
+  bottom: 30px;
+  color: #fff;
+  font-family: 'Novecento sans wide',"sans-serif";
+  left: 28.9%;
+  position: relative;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  width: 71%; }
+
+.blog-home-content {
+  padding-left: 120px;
+  margin-bottom: 60px; }

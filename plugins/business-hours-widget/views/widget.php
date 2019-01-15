@@ -25,7 +25,7 @@
 <?php if(strlen(trim($sunday)) > 0): ?>
 <p>
     <span class="business-sunday">
-       <b> Sunday:</b>
+       <b>Sunday:</b>
         <?php echo  $sunday; ?>
     </span>
 </p>
