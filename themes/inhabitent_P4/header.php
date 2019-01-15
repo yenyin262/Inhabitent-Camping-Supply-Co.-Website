@@ -37,7 +37,7 @@
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</nav><!-- #site-navigation -->
 					<div class="searchForm">
-						<span class="open-search"><i class="fas fa-search"></i></span><input type="searchForm" name="searchForm" placeholder="type hit and enter..."/>
+						<span class="open-search"><i class="fas fa-search"></i></span><input type="searchForm" name="searchForm" id="searchForm" placeholder="type hit and enter..."/>
   					</div>
 				</div>
 		</div>

@@ -23,7 +23,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="blog-content">
+	<div class="blog-home-content single-view-blog">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

@@ -7,6 +7,7 @@
 ?>
  <div class="green-header">
 <?php get_header(); ?>
+<div class="max-width-container site-widget">
 
 	<div id="primary" class="content-area content-widget">
 		<main id="main" class="site-main" role="main">
@@ -44,5 +45,6 @@
 <div class="widget-wrapper">
 <?php dynamic_sidebar(); ?>
 </div> 
+</div>
 <?php get_footer(); ?>
 </div>

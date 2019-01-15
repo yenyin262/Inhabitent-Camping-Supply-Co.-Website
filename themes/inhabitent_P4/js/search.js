@@ -16,4 +16,11 @@ $(function () {
 
         });
       });
+
+    //   $('searchForm').onsubmit = function() {
+    //     window.location = 'http://www.google.com/search?q=site:http://localhost:8888/Project_4 ' + $('type hit and enter...').value;
+    //     return false;
+    // }
+
+
   });

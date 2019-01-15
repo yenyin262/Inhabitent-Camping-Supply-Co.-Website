@@ -24,7 +24,7 @@ get_header(); ?>
           
 
             <div class="shop_container max-width-container">
-                <h1>Shop Stuff</h1>
+                <h2>Shop Stuff</h2>
                 <div class="shopStuff">
                    
        
@@ -80,12 +80,12 @@ get_header(); ?>
                         <input type="button" class="button_beach" value="Read More"/>  
                     </div>
                     <div class="grid-item-mountain">
-                        <h3> Taking in the View at Big Mountain</h3>
+                        <h3> Taking in the <br>View at Big Mountain</h3>
                       
                         <input type="button" class="button_mountain" value="Read More"/>  
                     </div>
                     <div class="grid-item-sky">
-                        <h3> Star-Gazing at the Night Sky</h3>
+                        <h3> Star-Gazing at<br> the Night Sky</h3>
                       
                         <input type="button" class="button_sky" value="Read More"/>  
                     </div>

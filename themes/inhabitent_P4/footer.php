@@ -10,7 +10,8 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
+				<div class="site-info ">
+					
 					<!-- <a href="<?php// echo esc_url( 'https://wordpress.org/' ); ?>"><?php// printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 					<div class="contact-info">
 						<h3>Contact Info</h3>
@@ -29,6 +30,7 @@
 					<div class ="footer-logo-wrapper">
 					<a href =""><img class ="footer-logo" src="http://localhost:8888/Project_4/wp-content/themes/inhabitent_P4/images/inhabitent-logo-text.svg" alt="footer_logo."/></a>
 					</div>
+
 					<div class="copyright">
                     <p> copyright <span class="copyright-year">© 2019</span> inhabitent</p> 
 					</div>
