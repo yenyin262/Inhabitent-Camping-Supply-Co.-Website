@@ -2,6 +2,18 @@
 
 An Online Camping Store Website consisting of blogposts, camping product accessoriesa and  brief information on the company. The website is built on a custom Wordpress starter theme. 
 
+
+#SnapShots
+
+
+<img width="1263" alt="screen shot 2019-01-15 at 3 21 48 pm" src="https://user-images.githubusercontent.com/43800526/51216621-df9ba480-18d9-11e9-8a72-fab61f6e76da.png">
+
+
+<img width="928" alt="screen shot 2019-01-15 at 3 22 48 pm" src="https://user-images.githubusercontent.com/43800526/51216607-cf83c500-18d9-11e9-9347-52bf740cc267.png">
+
+<img width="805" alt="screen shot 2019-01-15 at 3 24 06 pm" src="https://user-images.githubusercontent.com/43800526/51216706-24bfd680-18da-11e9-95a2-9f654fc912d2.png">
+
+
 # Technologies applied to the website 
 
 1. Wordpress
