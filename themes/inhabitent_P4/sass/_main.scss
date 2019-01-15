@@ -25,21 +25,27 @@ body {
     width: 100%;
     justify-content: space-between;
     padding-top: 10px;
+    max-width: 1120px;
+    margin: auto;
   }
 
   .logo {
+    // height: 30px;
+    // margin-left: 120px;
+    // top: 1%;
+    // position: absolute;
     height: 30px;
-    margin-left: 120px;
+    margin-left: -1px;
     top: 1%;
     position: absolute;
   }
 
   .nav-search-wrapper {
     height: 30px;
-    width: 38%;
+    width: 51%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 13%;
+    // margin-right: 13%;
   }
 
   .main-navigation li {
@@ -48,9 +54,7 @@ body {
 
   .main-navigation a {
     color: white;
-    &:hover {
-      color: #2f1339;
-    }
+  
   }
 
   .searchForm {
@@ -517,6 +521,9 @@ font-family: "Novecento sans wide bold";
       border-bottom: 1px solid #e1e1e1;
       .main-navigation a {
         color: #248a83;
+        &:hover {
+          color: #2f1339;
+        }
       }
       .open-search {
         color: #248a83;
@@ -713,9 +720,7 @@ font-family: "Novecento sans wide bold";
   }
   //style blog
 
-  .blog-entry-header {
-    padding-left: 120px;
-  }
+  
   .blog-title {
     position: absolute;
     background-color: #248a83;
@@ -750,16 +755,14 @@ font-family: "Novecento sans wide bold";
   }
   .blog-content {
     text-align: left;
-    padding-left: 120px;
+  
   }
 
   .journal-home {
     margin-left: 0;
   }
 
-  .blog-entry-footer {
-    padding-left: 120px;
-  }
+  
 
   .cat-links {
     text-transform: uppercase;
@@ -802,6 +805,7 @@ font-family: "Novecento sans wide bold";
 
 textarea {
   background-color: #e1e1e1;
+  width: 89%;
 }
 
 input[type="text"],
@@ -855,17 +859,22 @@ input[type="url"] {
 }
 
 .content-widget {
-  width: 130%;
+  width: 136%;
   padding-top: 40px;
-  padding-right: 40px;
+
 }
 
 
 .widget-wrapper {
+  // padding-top: 51px;
+  // padding-left: 40px;
+  // width: 72%;
+  // border-left: 1px solid #e1e1e1;
   padding-top: 51px;
-  padding-left: 40px;
-  width: 72%;
+  padding-left: 20px;
+  width: 41%;
   border-left: 1px solid #e1e1e1;
+
 }
 
 .widget {
@@ -881,10 +890,13 @@ input[type="url"] {
   font-family: "Novecento sans wide bold", sans-serif;
   font-size: 39px;
   color: #404040;
-  padding-left: 40px;
+  
   letter-spacing: 2px;
 }
 
+figure { 
+  margin:0;
+}
 .findus-content h2 {
   color: #2f1339;
   font-size: 34px;
@@ -897,6 +909,7 @@ input[type="url"] {
   font-family: "Novecento sans wide bold", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  
 }
 
 .contact-widget {
@@ -931,13 +944,16 @@ input[type="url"] {
 //search page styling
 
 .search-title {
-  padding-left: 120px;
+  margin: 0;
   font-family: "Novecento sans wide bold", sans-serif;
   text-transform: uppercase;
   font-size: 39px;
+  border-bottom: solid 1px #e1e1e1;
+    padding-bottom: 20px;
+    margin-right: 58px;
 }
 .search-results-title {
-  padding-left: 122px;
+  
 
   a {
     text-decoration: none;
@@ -948,12 +964,13 @@ input[type="url"] {
   }
 }
 .search-summary {
-  padding-left: 120px;
+  margin-bottom: 40px;
   line-height: 1.75;
+  font-size: 1rem;
+  margin-right: 100px;
+  font-family: 'Merriweather';
 }
-.search-meta {
-  padding-left: 120px;
-}
+
 .page-numbers {
   display: inline-block;
   background-color: #248a83;
@@ -965,7 +982,6 @@ input[type="url"] {
   text-decoration: none;
 }
 .search-pagination {
-  margin-left: 120px;
   border-top: solid 1px #e1e1e1;
   margin-bottom: 50px;
   padding-top: 20px;
@@ -978,11 +994,12 @@ input[type="url"] {
   padding-left: 20px;
 }
 .error-page-title {
-  font-size: 33px;
+  font-size: 38px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
   font-family: "Novecento sans wide bold", sans-serif;
+  margin-right: 90px;
 }
 
 fieldset {
@@ -1049,8 +1066,8 @@ input[type="searchError"] {
   font-size: 33.6px;
   padding: .75rem 1.5rem;
   position: absolute;
-  max-width: 47.9%;
-  margin-top: -21.75rem;
+  max-width: 42.9%;
+  margin-top: -24.75rem;
   font-family: 'Novecento sans wide bold';
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1063,18 +1080,21 @@ a {
 
 .blog-entry-meta { 
   background-color: #248a83;
-  bottom: 30px;
-  color: #fff;
-  font-family: 'Novecento sans wide',"sans-serif";
-  left: 28.9%;
-  position: relative;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  width: 71%;
+    bottom: 30px;
+    color: #fff;
+    font-family: Novecento sans wide,"sans-serif";
+    left: 27.9%;
+    position: relative;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    width: 47%;
 }
 
 .blog-home-content { 
-  padding-left: 120px;
   margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.75;
+  font-family: 'Merriweather';
+  margin-right: 50px;
 
 }

@@ -25,7 +25,7 @@
 				<div class="header_logo_menu">
 					<div class="site-branding">
 					<!-- <h1 class="site-title screen-reader-text"> -->
-					<?php if (! is_front_page()) : ?>
+					<?php if (! is_front_page() && !is_page('about')) : ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class ="logo" src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent.svg' ?> " alt="logo-green."/></a></h1>
 						<?php else : ?>
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class ="logo" src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-tent-white.svg' ?> " alt="logo."/></a></h1>
@@ -50,5 +50,5 @@
 				
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content site-widget">
+			<div id="content" class="site-content">
             
