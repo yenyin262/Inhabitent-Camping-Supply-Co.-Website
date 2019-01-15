@@ -3,7 +3,7 @@
 An Online Camping Store Website consisting of blogposts, camping product accessoriesa and  brief information on the company. The website is built on a custom Wordpress starter theme. 
 
 
-#SnapShots
+# SnapShots
 
 
 <img width="1263" alt="screen shot 2019-01-15 at 3 21 48 pm" src="https://user-images.githubusercontent.com/43800526/51216621-df9ba480-18d9-11e9-8a72-fab61f6e76da.png">
