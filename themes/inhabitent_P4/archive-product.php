@@ -8,68 +8,45 @@
 ?>
  <div class="green-header">
 
-	 <?php
-
-get_header(); ?>
-
-
-
+	 <?php get_header(); ?>
 
 	<div id="primary" class="content-area max-width-container">
 		<main id="main" class="site-main" role="main">
 
+			<?php if ( have_posts() ) : ?>
 
-        
-
-
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				//	the_archive_title( '<h1 class="page-title">', '</h1>' );
-				//	the_archive_description( '<div class="taxonomy-description">', '</div>' );
-                ?>
-                
-                <h1 class="page-title">Shop Stuff</h1>
-                <div class="page-categories"> 
-                    <?php   $terms = get_terms( 'product-type' ); // returns an array of posts
-                    ?>
-                    <?php foreach ( $terms as $term ) { ?>
-                   
-                     <a href="<?php echo get_term_link($term)?>" class="taxonomy-title"><?php echo $term ->name; ?></a>
-                
-               
-                    <?php }?>
+				<header class="page-header">
+					<h1 class="page-title">Shop Stuff</h1>
+                	<div class="page-categories"> 
+                		<?php   $terms = get_terms( 'product-type' ); // returns an array of posts
+                		?>
+                    	<?php foreach ( $terms as $term ) { ?>
+                    	<a href="<?php echo get_term_link($term)?>" class="taxonomy-title"><?php echo $term ->name; ?></a>
+                  		<?php }?>
                     
-                </div>
-                <div class="dash-border">
-                </div>
+                	</div>
+                	
+				<div class="dash-border"></div>
 			
-			</header><!-- .page-header -->
+				</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
+					<?php /* Start the Loop */ ?>
             
                 <ul class="product-list">
 			        <?php while ( have_posts() ) : the_post(); ?>
-                     <?php
-				    get_template_part( 'template-parts/content-product-item' );
-				    ?>
-
+                    	<?php
+				    	get_template_part( 'template-parts/content-product-item' );
+				    	?>
 			        <?php endwhile; ?>
                 </ul>
                 
-                    <?php // the_posts_navigation(); ?>
-
-		            <?php else : ?>
-
-			        <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		             <?php endif; ?>
+            <?php else : ?>
+			    <?php get_template_part( 'template-parts/content', 'none' ); ?>
+		    <?php endif; ?>
           
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php //get_sidebar(); ?>
+
 <?php get_footer(); ?>
                     

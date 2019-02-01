@@ -21,10 +21,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-				//	the_archive_title( '<h1 class="page-title">', '</h1>' );
-				//	the_archive_description( '<div class="taxonomy-description">', '</div>' );
 					$taxonomy = get_queried_object();
-					
                 ?>
                 
 				<h1 class="page-title"><?php echo $taxonomy->name; ?></h1>
@@ -51,7 +48,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
             </ul>
-			<?php // the_posts_navigation(); ?>
+		
 
 		<?php else : ?>
 
@@ -65,7 +62,7 @@ get_header(); ?>
 
 
 
-<?php //get_sidebar(); ?>
+
 <?php get_footer(); ?>
 </div>
 

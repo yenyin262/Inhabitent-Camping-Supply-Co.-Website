@@ -10,29 +10,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		
-			
-				
-				
-				<!-- <div class="header_menu"> -->
-					<!-- <nav class="main_navigation">
-						<?php //wp_nav_menu(array(
-							//'location' => 'menuLocation'
-
-					//	));
-						?>
-
-
-						
-					</nav> -->
-		
-				<!-- </div> -->
-			
-		
-	 
-
-	
-
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

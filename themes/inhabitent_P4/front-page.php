@@ -15,41 +15,30 @@ get_header(); ?>
 			        <img class ="main_logo" src="<?php echo get_template_directory_uri() . '/images/inhabitent-logo-full.svg' ?> " alt="main_logo."/>
                 </div>
             </div>	  
-                
-				   
-				
-		
-			
-			    
-          
+
 
             <div class="shop_container max-width-container">
                 <h2>Shop Stuff</h2>
                 <div class="shopStuff">
-                   
-       
                     <?php $terms = get_terms( 'product-type' ); // returns an array of posts
-                         ?>
+                    ?>
                     <?php foreach ( $terms as $term ) { ?>
-                     <div class="item">
-                        <img class ="icon" src="<?php echo get_template_directory_uri() . '/images/' . $term->name; ?>.svg" /> 
-                             <p><?php echo $term->description; ?></p>
-
-                             <a href="<?php echo get_term_link($term)?>" button class="button_shopStuff"><?php echo $term ->name . ' ' . 'Stuff'; ?></a>
-                             
-                    </div>
+                        <div class="item">
+                            <img class ="icon" src="<?php echo get_template_directory_uri() . '/images/' . $term->name; ?>.svg" /> 
+                            <p><?php echo $term->description; ?></p>
+                            <a href="<?php echo get_term_link($term)?>" button class="button_shopStuff"><?php echo $term ->name . ' ' . 'Stuff'; ?></a>
+                        </div>
                     <?php }?>
+                </div>
             </div>
-                    </div>
 
             <div class="inhabitent-main-container max-width-container">
                 <h2>Inhabitent Journal</h2>
                 <div class="inhabitent-journal-container">
-                
-                <?php 
+                    <?php 
                     $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => '3' );
                     $journal_posts = get_posts( $args ); // returns an array of posts
-                ?>
+                     ?>
                     <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 
                         <?php /* Content from your array of post results goes here */ ?>
@@ -66,27 +55,21 @@ get_header(); ?>
                         
             <div class="latest-adventures-section">
                 <h2>Latest Adventures </h2>
-           
-        
                 <div class="grid-container">
                     <div class="grid-item-canoe"> 
                         <h3>Getting Back to Nature in a Canoe</h3>
-                      
                         <input type="button" class="button_canoe" value="Read More"/>  
                     </div>
                     <div class="grid-item-beach">
                         <h3> A Night with Friends at the Beach</h3>
-                      
                         <input type="button" class="button_beach" value="Read More"/>  
                     </div>
                     <div class="grid-item-mountain">
                         <h3> Taking in the <br>View at Big Mountain</h3>
-                      
                         <input type="button" class="button_mountain" value="Read More"/>  
                     </div>
                     <div class="grid-item-sky">
                         <h3> Star-Gazing at<br> the Night Sky</h3>
-                      
                         <input type="button" class="button_sky" value="Read More"/>  
                     </div>
                 </div>
@@ -96,11 +79,7 @@ get_header(); ?>
             </div>
 
 
-    
-
-
 	    </main><!-- #main -->
     </div><!-- #primary -->
 
-<?php //get_sidebar(); ?>
 <?php get_footer(); ?>

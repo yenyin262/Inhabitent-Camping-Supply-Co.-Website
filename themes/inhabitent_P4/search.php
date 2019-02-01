@@ -35,7 +35,7 @@
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php// get_sidebar(); ?>
+
 <div class="widget-wrapper">
 <?php dynamic_sidebar(); ?>
 </div> 

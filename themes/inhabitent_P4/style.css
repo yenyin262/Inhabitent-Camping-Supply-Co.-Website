@@ -753,37 +753,57 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end; }
   body .main-navigation li {
-    padding-right: 10px; }
+    padding-right: 20px; }
   body .main-navigation a {
     color: white; }
     body .main-navigation a:hover {
-      background-color: transparent; }
+      background-color: transparent;
+      color: #f0e4d1; }
   body .searchForm {
     position: relative; }
+  body input::-webkit-input-placeholder {
+    color: #f0e4d1;
+    opacity: 0.7; }
   body .open-search {
     color: white;
     cursor: pointer;
     padding: 0.5rem; }
+    body .open-search:hover {
+      color: #f0e4d1; }
+  body .green-header input::-webkit-input-placeholder {
+    color: #404040; }
+  body .green-header input[type="searchForm"] {
+    color: #404040; }
   body .green-header .header_logo_menu {
     border-bottom: 1px solid #e1e1e1; }
     body .green-header .header_logo_menu .main-navigation a {
       color: #248A83; }
-    body .green-header .header_logo_menu:hover {
-      color: #2f1339; }
+      body .green-header .header_logo_menu .main-navigation a:hover {
+        color: #2f1339; }
     body .green-header .header_logo_menu .open-search {
       color: #248A83; }
+      body .green-header .header_logo_menu .open-search:hover {
+        color: #2f1339; }
+  body .white-header input::-webkit-input-placeholder {
+    color: #f0e4d1;
+    opacity: 0.7; }
   body .white-header .header_logo_menu {
     border-bottom: none; }
     body .white-header .header_logo_menu .main-navigation a {
       color: #ffffff; }
+      body .white-header .header_logo_menu .main-navigation a:hover {
+        color: #f0e4d1; }
     body .white-header .header_logo_menu .open-search {
       color: #ffffff; }
+      body .white-header .header_logo_menu .open-search:hover {
+        color: #f0e4d1; }
   body input[type="searchForm"] {
     border: 0;
     background: transparent;
     font-family: "Novecento sans wide", sans-serif;
     text-transform: uppercase;
-    display: none; }
+    display: none;
+    color: white; }
   body .header_container {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.38)), to(rgba(0, 0, 0, 0.38))), url("../../images/home-hero.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../../images/home-hero.jpg");
@@ -855,6 +875,8 @@ body {
     bottom: 3%;
     width: 49%;
     height: 16%; }
+    body .button_shopStuff:hover {
+      background-color: #19625d; }
   body .item a {
     color: white;
     text-decoration: none;
@@ -900,6 +922,7 @@ body {
   body .journal-title a {
     text-decoration: none;
     color: #248A83; }
+  body .findUs,
   body .journal-button {
     text-decoration: none;
     border: solid 1px black;
@@ -909,8 +932,10 @@ body {
     width: 27%;
     height: 37px;
     margin-left: 20px; }
+  body .findUs,
   body .journal-button:visited {
     color: #000; }
+  body .findUs,
   body .journal-button:hover {
     background-color: #248A83;
     color: #ffffff;
@@ -970,6 +995,8 @@ body {
       font-family: "Merriweather";
       text-transform: none;
       font-size: 48px; }
+      body .grid-container .grid-item-canoe h3:hover {
+        color: #f0e4d1; }
     body .grid-container .grid-item-beach {
       font-size: 25px;
       text-align: left;
@@ -1003,6 +1030,8 @@ body {
       font-family: "Merriweather";
       text-transform: none;
       font-size: 38px; }
+      body .grid-container .grid-item-beach h3:hover {
+        color: #f0e4d1; }
     body .grid-container .grid-item-mountain {
       font-size: 19px;
       font-weight: 400;
@@ -1039,6 +1068,8 @@ body {
       font-family: "Merriweather";
       text-transform: none;
       font-size: 25px; }
+      body .grid-container .grid-item-mountain h3:hover {
+        color: #f0e4d1; }
     body .grid-container .grid-item-sky {
       font-size: 19px;
       font-weight: lighter;
@@ -1074,6 +1105,8 @@ body {
       font-family: "Merriweather";
       text-transform: none;
       font-size: 25px; }
+      body .grid-container .grid-item-sky h3:hover {
+        color: #f0e4d1; }
   body .button-container {
     position: relative;
     height: 79px;
@@ -1095,6 +1128,8 @@ body {
       color: white;
       font-family: "Novecento sans wide";
       letter-spacing: 0; }
+      body .button-container .button_latestadventures:hover {
+        background-color: #19625d; }
   body .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1204,7 +1239,6 @@ body {
     padding: 0 20px;
     font-family: "Novecento sans wide"; }
   body .dash-border {
-    width: 91%;
     height: 1px;
     margin: 0px auto;
     border-bottom: 1px dashed #c8c8c8; }
@@ -1213,11 +1247,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     list-style: none;
-    margin-left: -20px;
-    margin-left: -20px;
-    margin-bottom: 80px;
-    padding-right: 50px;
-    padding-left: 70px; }
+    margin-bottom: 80px; }
   body .product-container {
     border: 1px solid #e1e1e1; }
   body .product img {
@@ -1228,11 +1258,9 @@ body {
     background-color: #e1e1e1; }
   body .product-info {
     max-width: 40em;
-    padding: 6px;
+    padding: .75rem 1rem;
     overflow-x: hidden;
-    list-style: none;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    list-style: none; }
   body .hentry {
     margin: 0; }
   body .product-info:before {
@@ -1253,21 +1281,21 @@ body {
     float: right;
     padding-left: 0.33em;
     color: #404040;
-    font-family: "Merriweather"; }
+    font-family: "Merriweather";
+    font-size: 0.9rem; }
   body .single-product-photo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 60px;
-    margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 200px; }
   body .single-product-photo img {
-    width: 59%;
-    height: 330px;
-    -o-object-fit: none; }
+    -o-object-fit: none;
+    width: 48%;
+    height: 380px; }
   body .single-product-info {
-    padding-left: 20px; }
+    padding-left: 40px; }
   body .product-post-title {
     color: #d99054;
     text-transform: uppercase;
@@ -1275,9 +1303,11 @@ body {
     letter-spacing: 2px;
     font-weight: bold; }
   body .single-product-price {
-    font-size: 23px; }
-  body .social {
-    word-spacing: 20px; }
+    font-size: 1.8rem;
+    font-family: "Novecento sans wide", sans-serif; }
+  body .single-product-content {
+    font-family: "Merriweather";
+    line-height: 1.75; }
   body .social-button {
     text-decoration: none;
     border: solid 1px black;
@@ -1290,7 +1320,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    width: 27%;
+    width: 20%;
     height: 37px; }
   body .social-button:visited {
     color: #000; }
@@ -1298,7 +1328,7 @@ body {
     background-color: #248A83;
     color: #ffffff; }
   body .blogpost {
-    width: 17%;
+    width: 12%;
     margin-top: 20px; }
   body .home-entry-title h2 {
     background-color: #248A83;
@@ -1312,6 +1342,7 @@ body {
     top: 46px;
     text-decoration: none;
     font-family: "Novecento sans wide bold"; }
+  body .findUs,
   body .journal-home {
     margin-left: 0; }
   body .cat-links {
@@ -1343,7 +1374,13 @@ input[type="submit"] {
   -webkit-box-shadow: none;
           box-shadow: none;
   font-family: "Novecento sans wide", sans-serif;
-  text-decoration: none; }
+  text-decoration: none;
+  text-shadow: none; }
+  input[type="submit"]:hover {
+    background-color: #19625d;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 textarea {
   display: -webkit-box;
@@ -1510,7 +1547,8 @@ figure {
   margin-right: 90px; }
 
 fieldset {
-  border: 0; }
+  border: 0;
+  padding-left: 0px; }
 
 .widgettitle {
   text-transform: uppercase;
@@ -1639,5 +1677,37 @@ cite {
   font-style: inherit;
   font-weight: bold; }
 
-.comment-form-url input {
-  width: 94%; }
+.comment-form p {
+  font-family: "Merriweather", sans-serif; }
+
+.comment-form .comment-form-comment {
+  font-family: "Novecento sans wide", sans-serif;
+  text-transform: uppercase; }
+
+.comment-form .comment-form-author,
+.comment-form .comment-form-email {
+  text-transform: uppercase;
+  font-family: "Novecento sans wide", sans-serif; }
+  .comment-form .comment-form-author input,
+  .comment-form .comment-form-email input {
+    width: 100%; }
+
+.comment-form .comment-form-author {
+  margin-right: 1%;
+  width: 45%;
+  float: left; }
+
+.comment-form .comment-form-email {
+  margin-left: 1%;
+  width: 43%;
+  float: left; }
+
+.comment-form .comment-form-url {
+  width: 93%;
+  text-transform: uppercase;
+  font-family: "Novecento sans wide", sans-serif; }
+  .comment-form .comment-form-url input {
+    width: 97%; }
+
+.comment-form .required {
+  color: #d99054; }

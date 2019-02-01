@@ -6,45 +6,46 @@
  */
 ?>
  <div class="green-header">
-<?php get_header(); ?>
-<div class="max-width-container site-widget">
+	<?php get_header(); ?>
+	<div class="max-width-container site-widget">
 
-	<div id="primary" class="content-area content-widget">
-		<main id="main" class="site-main" role="main">
+		<div id="primary" class="content-area content-widget">
+			<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-			<header class="archivepage-header">
-				<?php
-					the_archive_title( '<h1 class="archive-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+					<header class="archivepage-header">
+						<?php
+							the_archive_title( '<h1 class="archive-title">', '</h1>' );
+							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+					</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php /* Start the Loop */ ?>
 
-				<?php
-					get_template_part( 'template-parts/content-archive' );
-				?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+					<?php
+						get_template_part( 'template-parts/content-archive' );
+					?>
 
-			<?php the_posts_navigation(); ?>
+				<?php endwhile; ?>
 
-		<?php else : ?>
+					<?php the_posts_navigation(); ?>
 
-			<?php get_template_part( 'template-parts/content-archive' ); ?>
+				<?php else : ?>
 
-		<?php endif; ?>
+					<?php get_template_part( 'template-parts/content-archive' ); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php endif; ?>
 
-<?php //get_sidebar(); ?>
-<div class="widget-wrapper">
-<?php dynamic_sidebar(); ?>
-</div> 
-</div>
-<?php get_footer(); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+
+		<div class="widget-wrapper">
+			<?php dynamic_sidebar(); ?>
+		</div> 
+	</div>
+	<?php get_footer(); ?>
 </div>

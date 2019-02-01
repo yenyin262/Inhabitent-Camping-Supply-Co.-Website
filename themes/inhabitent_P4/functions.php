@@ -111,8 +111,6 @@ function red_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 
-
-
 /**
  * Custom template tags for this theme.
  */
@@ -123,18 +121,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-/*
-add_action( 'pre_get_posts', 'my_change_sort_order'); 
-function my_change_sort_order($query){
-    if(is_archive()):
-        //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
-        //Set the order ASC or DESC
-        $query->set( 'order', 'ASC' );
-        //Set the orderby
-        $query->set( 'orderby', 'title' );
-    endif;    
-};
-*/
+
 add_filter( 'posts_orderby' , 'custom_cpt_order' );
 
 function custom_cpt_order( $orderby ) {
@@ -143,11 +130,10 @@ function custom_cpt_order( $orderby ) {
 	// Check if the query is for an archive
 	if ( is_archive() && get_query_var("post_type") == "product" ) {
 		// Query was for archive, then set order
-		return "$wpdb->posts.post_title ASC";
+	return "$wpdb->posts.post_title ASC";
 	}
-	
 	return $orderby;
-}
+	}
 
 
 	add_action( 'pre_get_posts', 'shop_page' );

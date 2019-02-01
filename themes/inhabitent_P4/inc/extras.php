@@ -35,6 +35,6 @@ add_action('login_head', 'my_custom_login_logo');
 
 
 function the_url() {
-    return get_bloginfo('url');
+    return home_url();
 }
 add_filter( 'login_headerurl', 'the_url' );
