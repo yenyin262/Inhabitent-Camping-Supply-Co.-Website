@@ -59,6 +59,7 @@ body {
   .searchForm {
     position: relative;
   
+  
   }
   input::-webkit-input-placeholder {
     color: #f0e4d1;
@@ -126,10 +127,19 @@ body {
     border: 0;
     background: transparent;
     font-family: $brand-font, $font__main;
-    text-transform: uppercase;
-    display: none;
+    text-transform: uppercase; 
+    -webkit-transition: width 0.6s; /* Safari */
+    transition: width 0.6s;
     color: white;
+    width: 0px;
+    &.searchActive { 
+      -webkit-transition: width 0.3s; /* Safari */
+     transition: width 0.3s;
+      width:180px;
+    }
   }
+
+  
 
   .header_container {
     background: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../../images/home-hero.jpg");
