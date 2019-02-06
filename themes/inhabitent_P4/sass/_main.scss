@@ -125,12 +125,12 @@ body {
     background: transparent;
     font-family: $brand-font, $font__main;
     text-transform: uppercase;
-    -webkit-transition: width 0.6s; 
+    -webkit-transition: width 0.6s;
     transition: width 0.6s;
     color: white;
     width: 0px;
     &.searchActive {
-      -webkit-transition: width 0.3s; 
+      -webkit-transition: width 0.3s;
       transition: width 0.3s;
       width: 180px;
     }
@@ -517,7 +517,7 @@ body {
       }
     }
   }
-  
+
   //footer styling
 
   .site-info {
@@ -714,7 +714,6 @@ body {
     margin: 0;
   }
 
-  
   // single product-item view
 
   .single-product-photo {
@@ -893,12 +892,12 @@ body {
     width: 41%;
     border-left: 1px solid #e1e1e1;
 
-  .widget-title {
-    clear: both;
-    font-family: $brand-bold-font, $font__main;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+    .widget-title {
+      clear: both;
+      font-family: $brand-bold-font, $font__main;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
     .fa-phone {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
@@ -924,23 +923,22 @@ body {
   figure {
     margin: 0;
   }
-  .findus-content { 
+  .findus-content {
     h2 {
-    color: #2f1339;
-    font-size: 34px;
-    font-family: $brand-bold-font, $font__main;
-    letter-spacing: 2px;
+      color: #2f1339;
+      font-size: 34px;
+      font-family: $brand-bold-font, $font__main;
+      letter-spacing: 2px;
+    }
+    p {
+      font-family: $brand-body-font;
+      line-height: 1.75;
+    }
   }
-  p { 
-    font-family: $brand-body-font;
-    line-height: 1.75;
-  }
-  }
-  .wpcf7-form { 
-    label { 
+  .wpcf7-form {
+    label {
       font-family: $brand-font, $font__main;
     }
-  
   }
 
   .contact-widget {
