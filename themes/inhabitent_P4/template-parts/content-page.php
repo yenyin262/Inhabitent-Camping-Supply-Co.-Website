@@ -8,11 +8,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
-<?php //the_title(); ?>
-
-
 	<div class="about-content">
 	<?php the_content(); ?>
 		<?php

@@ -725,7 +725,7 @@ body {
   body h4,
   body h5,
   body h6 {
-    font-family: "Novecento sans wide", "$font__main"; }
+    font-family: "Novecento sans wide", sans-serif; }
   body .header_logo_menu {
     height: 40px;
     display: -webkit-box;
@@ -738,38 +738,38 @@ body {
     padding-top: 10px;
     max-width: 1120px;
     margin: auto; }
-  body .logo {
-    height: 30px;
-    margin-left: -1px;
-    top: 1%;
-    position: absolute; }
-  body .nav-search-wrapper {
-    height: 30px;
-    width: 51%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-  body .main-navigation li {
-    padding-right: 20px; }
-  body .main-navigation a {
-    color: white; }
-    body .main-navigation a:hover {
-      background-color: transparent;
-      color: #f0e4d1; }
-  body .searchForm {
-    position: relative; }
+    body .header_logo_menu .logo {
+      height: 30px;
+      margin-left: -1px;
+      top: 1%;
+      position: absolute; }
+    body .header_logo_menu .nav-search-wrapper {
+      height: 30px;
+      width: 51%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      body .header_logo_menu .nav-search-wrapper .main-navigation li {
+        padding-right: 20px; }
+      body .header_logo_menu .nav-search-wrapper .main-navigation a {
+        color: white; }
+        body .header_logo_menu .nav-search-wrapper .main-navigation a:hover {
+          background-color: transparent;
+          color: #f0e4d1; }
+      body .header_logo_menu .nav-search-wrapper .searchForm {
+        position: relative; }
+        body .header_logo_menu .nav-search-wrapper .searchForm .open-search {
+          color: white;
+          cursor: pointer;
+          padding: 0.5rem; }
+          body .header_logo_menu .nav-search-wrapper .searchForm .open-search:hover {
+            color: #f0e4d1; }
   body input::-webkit-input-placeholder {
     color: #f0e4d1;
     opacity: 0.7; }
-  body .open-search {
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem; }
-    body .open-search:hover {
-      color: #f0e4d1; }
   body .green-header input::-webkit-input-placeholder {
     color: #404040; }
   body .green-header input[type="searchForm"] {
@@ -803,13 +803,11 @@ body {
     font-family: "Novecento sans wide", sans-serif;
     text-transform: uppercase;
     -webkit-transition: width 0.6s;
-    /* Safari */
     transition: width 0.6s;
     color: white;
     width: 0px; }
     body input[type="searchForm"].searchActive {
       -webkit-transition: width 0.3s;
-      /* Safari */
       transition: width 0.3s;
       width: 180px; }
   body .header_container {
@@ -820,23 +818,30 @@ body {
     height: 800px;
     margin-top: -40px;
     margin-bottom: 60px; }
-  body .hero_logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  body .main_logo {
-    margin-top: 5%; }
-  body .shopStuff {
+    body .header_container .hero_logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    body .header_container .main_logo {
+      margin-top: 5%; }
+  body .shop_container h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2.4rem;
+    color: #2f1339; }
+  body .shop_container .shopStuff {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -846,31 +851,28 @@ body {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-  body .shop_container h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 400;
-    text-align: center;
-    font-size: 2.4rem;
-    color: #2f1339; }
-  body .shopStuff p {
-    color: #404040; }
-  body .item {
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    text-align: center;
-    font-family: "Merriweather";
-    padding-top: 20px;
-    max-width: 22.2%;
-    position: relative;
-    height: 251px;
-    margin-right: auto;
-    margin-left: auto; }
-  body .item:hover {
-    border: 1px solid #d99054; }
-  body .item img {
-    width: 22%; }
-  body .button_shopStuff {
+    body .shop_container .shopStuff .item {
+      border: 1px solid #e1e1e1;
+      border-top-width: 5px;
+      text-align: center;
+      font-family: "Merriweather";
+      padding-top: 20px;
+      max-width: 22.2%;
+      position: relative;
+      height: 251px;
+      margin-right: auto;
+      margin-left: auto; }
+      body .shop_container .shopStuff .item img {
+        width: 22%; }
+      body .shop_container .shopStuff .item p {
+        color: #404040; }
+      body .shop_container .shopStuff .item a {
+        color: white;
+        text-decoration: none;
+        font-family: "Novecento sans wide"; }
+      body .shop_container .shopStuff .item:hover {
+        border: 1px solid #d99054; }
+  body .shop_container .button_shopStuff {
     background-color: #248A83;
     text-transform: uppercase;
     border: none;
@@ -883,12 +885,8 @@ body {
     bottom: 3%;
     width: 49%;
     height: 16%; }
-    body .button_shopStuff:hover {
+    body .shop_container .button_shopStuff:hover {
       background-color: #19625d; }
-  body .item a {
-    color: white;
-    text-decoration: none;
-    font-family: "Novecento sans wide"; }
   body .inhabitent-main-container h2 {
     font-size: 2.4rem;
     font-family: "Novecento sans wide";
@@ -898,7 +896,7 @@ body {
     letter-spacing: 2px;
     font-weight: 400;
     color: #2f1339; }
-  body .inhabitent-journal-container {
+  body .inhabitent-main-container .inhabitent-journal-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -906,30 +904,31 @@ body {
     letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase; }
-  body .journalHomepage {
-    border: 1px solid #e1e1e1;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px; }
-  body .journalHomepage img {
-    height: 274px;
-    border-bottom: 5px solid #e1e1e1; }
-  body .post-date {
-    padding-left: 20px;
-    font-size: 10px; }
-  body .comments {
-    font-size: 10px; }
+    body .inhabitent-main-container .inhabitent-journal-container .journalHomepage {
+      border: 1px solid #e1e1e1;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-bottom: 20px; }
+      body .inhabitent-main-container .inhabitent-journal-container .journalHomepage img {
+        height: 274px;
+        border-bottom: 5px solid #e1e1e1; }
+      body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .post-date {
+        padding-left: 20px;
+        font-size: 10px; }
+      body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .comments {
+        font-size: 10px; }
+      body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title {
+        font-size: 1.2rem;
+        padding-left: 19px;
+        line-height: 1.25;
+        font-family: "Novecento sans wide bold"; }
+        body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title a {
+          color: #248A83; }
+          body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title a:hover {
+            color: #2f1339; }
   body .comments-link a {
     text-decoration: none;
     color: #ffffff; }
-  body .journal-title {
-    font-size: 1.2rem;
-    padding-left: 19px;
-    line-height: 1.25;
-    font-family: "Novecento sans wide bold"; }
-  body .journal-title a {
-    text-decoration: none;
-    color: #248A83; }
   body .findUs,
   body .journal-button {
     text-decoration: none;
@@ -956,188 +955,188 @@ body {
     letter-spacing: 2px;
     max-width: 1120px;
     margin: auto; }
-  body .latest-adventures-section h2 {
-    padding-top: 20px;
-    padding-bottom: 45px;
-    font-size: 40px;
-    font-weight: 400;
-    color: #2f1339; }
-  body .grid-container {
-    height: 600px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px 20px; }
-    body .grid-container .grid-item-canoe {
-      padding-left: 12px;
-      text-align: left;
-      font-size: 38px;
+    body .latest-adventures-section h2 {
+      padding-top: 20px;
+      padding-bottom: 45px;
+      font-size: 40px;
       font-weight: 400;
-      color: white;
-      grid-column: 1/3;
-      grid-row: 1/3;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/canoe-girl.jpg");
-      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/canoe-girl.jpg");
-      background-size: cover, cover;
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      position: relative; }
-      body .grid-container .grid-item-canoe .button_canoe {
-        border: 1px solid #fff;
-        background-color: transparent;
-        text-transform: uppercase;
-        position: absolute;
-        left: 4%;
-        top: 41%;
-        height: 37px;
-        color: #fff;
-        width: 25%;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        border-color: #fff; }
-        body .grid-container .grid-item-canoe .button_canoe:hover {
-          background-color: #248A83;
-          border: none; }
-    body .grid-container .grid-item-canoe h3 {
-      font-weight: 400;
-      font-family: "Merriweather";
-      text-transform: none;
-      font-size: 48px; }
-      body .grid-container .grid-item-canoe h3:hover {
-        color: #f0e4d1; }
-    body .grid-container .grid-item-beach {
-      font-size: 25px;
-      text-align: left;
-      padding-left: 8px;
-      color: white;
-      grid-column: 3 / 5;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/beach-bonfire.jpg");
-      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/beach-bonfire.jpg");
-      background-size: cover, cover;
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      position: relative; }
-      body .grid-container .grid-item-beach .button_beach {
-        border: 1px solid #ffffff;
-        background-color: transparent;
-        text-transform: uppercase;
-        position: absolute;
-        font-weight: 100;
-        height: 45px;
+      color: #2f1339; }
+    body .latest-adventures-section .grid-container {
+      height: 600px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 20px 20px; }
+      body .latest-adventures-section .grid-container .grid-item-canoe {
+        padding-left: 12px;
+        text-align: left;
+        font-size: 38px;
+        font-weight: 400;
         color: white;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        left: 6%;
-        top: 69%;
-        width: 25%; }
-        body .grid-container .grid-item-beach .button_beach:hover {
-          background-color: #248A83;
-          border: none; }
-    body .grid-container .grid-item-beach h3 {
-      font-weight: 400;
-      font-family: "Merriweather";
-      text-transform: none;
-      font-size: 38px; }
-      body .grid-container .grid-item-beach h3:hover {
-        color: #f0e4d1; }
-    body .grid-container .grid-item-mountain {
-      font-size: 19px;
-      font-weight: 400;
-      text-align: left;
-      color: white;
-      grid-column: 3/4;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/mountain-hikers.jpg");
-      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/mountain-hikers.jpg");
-      background-size: cover, cover;
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      position: relative; }
-      body .grid-container .grid-item-mountain .button_mountain {
-        border: 1px solid #ffffff;
-        background-color: transparent;
-        text-transform: uppercase;
-        position: absolute;
-        font-weight: 100;
-        height: 39px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/canoe-girl.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/canoe-girl.jpg");
+        background-size: cover, cover;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        position: relative; }
+        body .latest-adventures-section .grid-container .grid-item-canoe .button_canoe {
+          border: 1px solid #fff;
+          background-color: transparent;
+          text-transform: uppercase;
+          position: absolute;
+          left: 4%;
+          top: 41%;
+          height: 37px;
+          color: #fff;
+          width: 25%;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          border-color: #fff; }
+          body .latest-adventures-section .grid-container .grid-item-canoe .button_canoe:hover {
+            background-color: #248A83;
+            border: none; }
+      body .latest-adventures-section .grid-container .grid-item-canoe h3 {
+        font-weight: 400;
+        font-family: "Merriweather";
+        text-transform: none;
+        font-size: 48px; }
+        body .latest-adventures-section .grid-container .grid-item-canoe h3:hover {
+          color: #f0e4d1; }
+      body .latest-adventures-section .grid-container .grid-item-beach {
+        font-size: 25px;
+        text-align: left;
+        padding-left: 8px;
         color: white;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        top: 69%;
-        left: 6%;
-        width: 60%; }
-        body .grid-container .grid-item-mountain .button_mountain:hover {
-          background-color: #248A83;
-          border: none; }
-    body .grid-container .grid-item-mountain h3 {
+        grid-column: 3 / 5;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/beach-bonfire.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/beach-bonfire.jpg");
+        background-size: cover, cover;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        position: relative; }
+        body .latest-adventures-section .grid-container .grid-item-beach .button_beach {
+          border: 1px solid #ffffff;
+          background-color: transparent;
+          text-transform: uppercase;
+          position: absolute;
+          font-weight: 100;
+          height: 45px;
+          color: white;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          left: 6%;
+          top: 69%;
+          width: 25%; }
+          body .latest-adventures-section .grid-container .grid-item-beach .button_beach:hover {
+            background-color: #248A83;
+            border: none; }
+      body .latest-adventures-section .grid-container .grid-item-beach h3 {
+        font-weight: 400;
+        font-family: "Merriweather";
+        text-transform: none;
+        font-size: 38px; }
+        body .latest-adventures-section .grid-container .grid-item-beach h3:hover {
+          color: #f0e4d1; }
+      body .latest-adventures-section .grid-container .grid-item-mountain {
+        font-size: 19px;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+        grid-column: 3/4;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/mountain-hikers.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/mountain-hikers.jpg");
+        background-size: cover, cover;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        position: relative; }
+        body .latest-adventures-section .grid-container .grid-item-mountain .button_mountain {
+          border: 1px solid #ffffff;
+          background-color: transparent;
+          text-transform: uppercase;
+          position: absolute;
+          font-weight: 100;
+          height: 39px;
+          color: white;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          top: 69%;
+          left: 6%;
+          width: 60%; }
+          body .latest-adventures-section .grid-container .grid-item-mountain .button_mountain:hover {
+            background-color: #248A83;
+            border: none; }
+      body .latest-adventures-section .grid-container .grid-item-mountain h3 {
+        position: relative;
+        top: 17%;
+        left: 5%;
+        font-weight: 400;
+        font-family: "Merriweather";
+        text-transform: none;
+        font-size: 25px; }
+        body .latest-adventures-section .grid-container .grid-item-mountain h3:hover {
+          color: #f0e4d1; }
+      body .latest-adventures-section .grid-container .grid-item-sky {
+        font-size: 19px;
+        font-weight: lighter;
+        text-align: left;
+        color: white;
+        grid-column: 4 / 5;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/night-sky.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/night-sky.jpg");
+        background-size: cover, cover;
+        background-position: center, center;
+        background-repeat: no-repeat, no-repeat;
+        position: relative; }
+        body .latest-adventures-section .grid-container .grid-item-sky .button_sky {
+          border: 1px solid #ffffff;
+          background-color: transparent;
+          text-transform: uppercase;
+          position: absolute;
+          font-weight: 100;
+          height: 38px;
+          color: white;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          left: 7%;
+          width: 52%; }
+          body .latest-adventures-section .grid-container .grid-item-sky .button_sky:hover {
+            background-color: #248A83;
+            border: none; }
+      body .latest-adventures-section .grid-container .grid-item-sky h3 {
+        position: relative;
+        left: 8%;
+        top: 6%;
+        font-weight: 400;
+        font-family: "Merriweather";
+        text-transform: none;
+        font-size: 25px; }
+        body .latest-adventures-section .grid-container .grid-item-sky h3:hover {
+          color: #f0e4d1; }
+    body .latest-adventures-section .button-container {
       position: relative;
-      top: 17%;
-      left: 5%;
-      font-weight: 400;
-      font-family: "Merriweather";
-      text-transform: none;
-      font-size: 25px; }
-      body .grid-container .grid-item-mountain h3:hover {
-        color: #f0e4d1; }
-    body .grid-container .grid-item-sky {
-      font-size: 19px;
-      font-weight: lighter;
-      text-align: left;
-      color: white;
-      grid-column: 4 / 5;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../../images/night-sky.jpg");
-      background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../images/night-sky.jpg");
-      background-size: cover, cover;
-      background-position: center, center;
-      background-repeat: no-repeat, no-repeat;
-      position: relative; }
-      body .grid-container .grid-item-sky .button_sky {
-        border: 1px solid #ffffff;
-        background-color: transparent;
+      height: 79px;
+      width: 40%;
+      top: 7%; }
+      body .latest-adventures-section .button-container .button_latestadventures {
+        background-color: #248A83;
         text-transform: uppercase;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        left: 0%;
+        bottom: 82%;
         position: absolute;
-        font-weight: 100;
-        height: 38px;
+        text-decoration: none;
+        height: 50px;
+        font-size: 1.1rem;
         color: white;
-        -webkit-box-shadow: none;
-                box-shadow: none;
-        left: 7%;
-        width: 52%; }
-        body .grid-container .grid-item-sky .button_sky:hover {
-          background-color: #248A83;
-          border: none; }
-    body .grid-container .grid-item-sky h3 {
-      position: relative;
-      left: 8%;
-      top: 6%;
-      font-weight: 400;
-      font-family: "Merriweather";
-      text-transform: none;
-      font-size: 25px; }
-      body .grid-container .grid-item-sky h3:hover {
-        color: #f0e4d1; }
-  body .button-container {
-    position: relative;
-    height: 79px;
-    width: 40%;
-    top: 7%; }
-    body .button-container .button_latestadventures {
-      background-color: #248A83;
-      text-transform: uppercase;
-      border: none;
-      padding: 15px;
-      font-size: 15px;
-      cursor: pointer;
-      left: 0%;
-      bottom: 82%;
-      position: absolute;
-      text-decoration: none;
-      height: 50px;
-      font-size: 1.1rem;
-      color: white;
-      font-family: "Novecento sans wide";
-      letter-spacing: 0; }
-      body .button-container .button_latestadventures:hover {
-        background-color: #19625d; }
+        font-family: "Novecento sans wide";
+        letter-spacing: 0; }
+        body .latest-adventures-section .button-container .button_latestadventures:hover {
+          background-color: #19625d; }
   body .site-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1151,68 +1150,68 @@ body {
     background-position: center;
     height: 350px;
     background-repeat: no-repeat; }
-  body .contact-info {
-    margin-top: 2%;
-    -ms-flex-preferred-size: 18%;
-        flex-basis: 18%;
-    margin-left: 132px; }
-  body .contact-info li {
-    list-style: none;
-    color: #ffffff;
-    line-height: 1.75;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-family: "Merriweather";
-    cursor: pointer; }
-    body .contact-info li:hover {
-      text-decoration: underline; }
-  body .contact-info h3 {
-    color: #d99054;
-    text-transform: uppercase;
-    font-family: "Novecento sans wide bold"; }
-  body .fa-phone {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); }
-  body .social-info {
-    display: inline-block;
-    font-size: 24px;
-    color: white;
-    letter-spacing: 10px; }
-  body .business-hours h3 {
-    color: #d99054;
-    text-transform: uppercase;
-    font-family: "Novecento sans wide bold";
-    letter-spacing: 2px; }
-  body .business-hours {
-    color: #ffffff;
-    margin-top: 2%;
-    -ms-flex-preferred-size: 32%;
-        flex-basis: 32%; }
-  body .business-hours p {
-    color: #ffffff;
-    font-size: 16px;
-    font-family: "Merriweather";
-    line-height: 1.75; }
-  body .footer-logo-wrapper {
-    margin-top: 3%;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%; }
-  body .footer-logo {
-    width: 70%; }
-  body .copyright {
-    font-family: "Novecento sans wide", sans-serif;
-    color: white;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100; }
-  body .copyright p {
-    font-family: "Novecento sans wide", sans-serif;
-    color: white; }
-  body .copyright-year {
-    font-size: 0.8rem;
-    font-weight: 100; }
+    body .site-info .contact-info {
+      margin-top: 2%;
+      -ms-flex-preferred-size: 18%;
+          flex-basis: 18%;
+      margin-left: 132px; }
+      body .site-info .contact-info h3 {
+        color: #d99054;
+        text-transform: uppercase;
+        font-family: "Novecento sans wide bold"; }
+      body .site-info .contact-info li {
+        list-style: none;
+        color: #ffffff;
+        line-height: 1.75;
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-family: "Merriweather";
+        cursor: pointer; }
+        body .site-info .contact-info li:hover {
+          text-decoration: underline; }
+      body .site-info .contact-info .fa-phone {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1); }
+      body .site-info .contact-info .social-info {
+        display: inline-block;
+        font-size: 24px;
+        color: white;
+        letter-spacing: 10px; }
+    body .site-info .business-hours {
+      color: #ffffff;
+      margin-top: 2%;
+      -ms-flex-preferred-size: 32%;
+          flex-basis: 32%; }
+      body .site-info .business-hours h3 {
+        color: #d99054;
+        text-transform: uppercase;
+        font-family: "Novecento sans wide bold";
+        letter-spacing: 2px; }
+      body .site-info .business-hours p {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: "Merriweather";
+        line-height: 1.75; }
+    body .site-info .footer-logo-wrapper {
+      margin-top: 3%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%; }
+      body .site-info .footer-logo-wrapper .footer-logo {
+        width: 70%; }
+    body .site-info .copyright {
+      font-family: "Novecento sans wide", sans-serif;
+      color: white;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 100; }
+      body .site-info .copyright p {
+        font-family: "Novecento sans wide", sans-serif;
+        color: white; }
+      body .site-info .copyright .copyright-year {
+        font-size: 0.8rem;
+        font-weight: 100; }
   body .page-header {
     margin-bottom: 40px;
     padding-bottom: 40px; }
@@ -1222,34 +1221,34 @@ body {
       font-family: "Merriweather";
       color: #404040;
       font-size: 16px; }
-  body .page-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    font-family: "Novecento sans wide bold", sans-serif;
-    font-size: 40px; }
-  body .page-categories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 18px;
-    padding-bottom: 40px; }
-  body .page-categories a {
-    color: #2488a3; }
-    body .page-categories a:hover {
-      color: #2f1339; }
-  body .taxonomy-title {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0 20px;
-    font-family: "Novecento sans wide"; }
-  body .dash-border {
-    height: 1px;
-    margin: 0px auto;
-    border-bottom: 1px dashed #c8c8c8; }
+    body .page-header .page-title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      font-family: "Novecento sans wide bold", sans-serif;
+      font-size: 40px; }
+    body .page-header .page-categories {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 18px;
+      padding-bottom: 40px; }
+      body .page-header .page-categories a {
+        color: #2488a3; }
+        body .page-header .page-categories a:hover {
+          color: #2f1339; }
+      body .page-header .page-categories .taxonomy-title {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 20px;
+        font-family: "Novecento sans wide"; }
+    body .page-header .dash-border {
+      height: 1px;
+      margin: 0px auto;
+      border-bottom: 1px dashed #c8c8c8; }
   body .product-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1258,39 +1257,39 @@ body {
     margin-bottom: 80px; }
   body .product-container {
     border: 1px solid #e1e1e1; }
-  body .product img {
-    height: 234px;
-    -o-object-fit: cover;
-       object-fit: cover; }
-  body .photo {
-    background-color: #e1e1e1; }
-  body .product-info {
-    max-width: 40em;
-    padding: .75rem 1rem;
-    overflow-x: hidden;
-    list-style: none; }
+    body .product-container .product img {
+      height: 234px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    body .product-container .photo {
+      background-color: #e1e1e1; }
+    body .product-container .product-info {
+      max-width: 40em;
+      padding: 0.75rem 1rem;
+      overflow-x: hidden;
+      list-style: none; }
+      body .product-container .product-info:before {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: "...................................................";
+        color: #000; }
+      body .product-container .product-info .product-title,
+      body .product-container .product-info .product-price {
+        background: white; }
+      body .product-container .product-info .product-title {
+        display: inline;
+        padding-right: 0.33em;
+        color: #2f1339;
+        font-family: "Merriweather"; }
+      body .product-container .product-info .product-price {
+        float: right;
+        padding-left: 0.33em;
+        color: #404040;
+        font-family: "Merriweather";
+        font-size: 0.9rem; }
   body .hentry {
     margin: 0; }
-  body .product-info:before {
-    float: left;
-    width: 0;
-    white-space: nowrap;
-    content: "...................................................";
-    color: #000; }
-  body .product-title {
-    display: inline;
-    padding-right: 0.33em;
-    color: #2f1339;
-    font-family: "Merriweather"; }
-  body .product-title,
-  body .product-price {
-    background: white; }
-  body .product-price {
-    float: right;
-    padding-left: 0.33em;
-    color: #404040;
-    font-family: "Merriweather";
-    font-size: 0.9rem; }
   body .single-product-photo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1298,24 +1297,25 @@ body {
     padding-top: 60px;
     margin-right: 40px;
     margin-bottom: 200px; }
-  body .single-product-photo img {
-    -o-object-fit: none;
-    width: 48%;
-    height: 380px; }
-  body .single-product-info {
-    padding-left: 40px; }
-  body .product-post-title {
-    color: #d99054;
-    text-transform: uppercase;
-    font-size: 38px;
-    letter-spacing: 2px;
-    font-weight: bold; }
-  body .single-product-price {
-    font-size: 1.8rem;
-    font-family: "Novecento sans wide", sans-serif; }
-  body .single-product-content {
-    font-family: "Merriweather";
-    line-height: 1.75; }
+    body .single-product-photo img {
+      -o-object-fit: none;
+      width: 48%;
+      height: 380px; }
+    body .single-product-photo .single-product-info {
+      padding-left: 40px; }
+      body .single-product-photo .single-product-info .product-post-title {
+        color: #d99054;
+        text-transform: uppercase;
+        font-size: 38px;
+        letter-spacing: 2px;
+        font-weight: bold; }
+      body .single-product-photo .single-product-info .single-product-price {
+        font-size: 1.8rem;
+        font-family: "Novecento sans wide", sans-serif; }
+      body .single-product-photo .single-product-info .single-product-content {
+        font-family: "Merriweather";
+        line-height: 1.75;
+        margin-top: 2.2rem; }
   body .social-button {
     text-decoration: none;
     border: solid 1px black;
@@ -1323,33 +1323,20 @@ body {
     color: black;
     word-spacing: 4px;
     display: inline-block;
-    width: 27%;
+    width: 20%;
     height: 37px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    width: 20%;
     height: 37px; }
-  body .social-button:visited {
-    color: #000; }
-  body .social-button:hover {
-    background-color: #248A83;
-    color: #ffffff; }
+    body .social-button:visited {
+      color: #000; }
+    body .social-button:hover {
+      background-color: #248A83;
+      color: #ffffff; }
   body .blogpost {
     width: 12%;
     margin-top: 20px; }
-  body .home-entry-title h2 {
-    background-color: #248A83;
-    color: #fff;
-    font-size: 33.6px;
-    left: 10.8%;
-    padding: 20px 2px;
-    position: absolute;
-    margin-top: 2.25rem;
-    max-width: 75%;
-    top: 46px;
-    text-decoration: none;
-    font-family: "Novecento sans wide bold"; }
   body .findUs,
   body .journal-home {
     margin-left: 0; }
@@ -1364,358 +1351,322 @@ body {
   body .tags-links a {
     text-decoration: none;
     color: #248A83; }
-
-.social ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-input[type="submit"] {
-  background-color: #248A83;
-  text-transform: uppercase;
-  border: none;
-  padding: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  color: #fff;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: "Novecento sans wide", sans-serif;
-  text-decoration: none;
-  text-shadow: none; }
-  input[type="submit"]:hover {
-    background-color: #19625d;
-    text-shadow: none;
+  body .social ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  body input[type="submit"] {
+    background-color: #248A83;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
     -webkit-box-shadow: none;
-            box-shadow: none; }
-
-textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #e1e1e1;
-  width: 89%; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"] {
-  background-color: #e1e1e1; }
-
-.border {
-  height: 1px;
-  border: 2px solid #c8c8c8; }
-
-.hero-image-header {
-  height: 100vh;
-  color: #fff;
-  top: 6px;
-  z-index: -1;
-  position: relative;
-  margin-top: -47px;
-  letter-spacing: 2px;
-  font-size: 25px;
-  font-family: "Novecento sans wide bold"; }
-
-.about-content > h2 {
-  color: #2f1339;
-  font-size: 34px;
-  letter-spacing: 2px;
-  font-family: "Novecento sans wide bold", sans-serif; }
-
-.about-content > p {
-  color: #404040;
-  font-family: "Merriweather";
-  font-size: 16px;
-  line-height: 1.75;
-  padding-left: 263px;
-  padding-right: 374px; }
-
-.about-area {
-  margin-bottom: 50px; }
-
-.site-widget {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.content-widget {
-  width: 136%;
-  padding-top: 40px; }
-
-.widget-wrapper {
-  padding-top: 51px;
-  padding-left: 20px;
-  width: 41%;
-  border-left: 1px solid #e1e1e1; }
-
-.widget {
-  font-family: "Merriweather";
-  line-height: 1.75; }
-
-.max-width-container {
-  max-width: 1120px;
-  margin: auto; }
-
-.findus-title {
-  font-family: "Novecento sans wide bold", sans-serif;
-  font-size: 39px;
-  color: #404040;
-  letter-spacing: 2px; }
-
-figure {
-  margin: 0; }
-
-.findus-content h2 {
-  color: #2f1339;
-  font-size: 34px;
-  font-family: "Novecento sans wide bold", sans-serif;
-  letter-spacing: 2px; }
-
-.widget-title {
-  clear: both;
-  font-family: "Novecento sans wide bold", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.contact-widget {
-  color: #248A83;
-  cursor: pointer; }
-  .contact-widget:hover {
-    color: #2f1339; }
-
-.archive-title {
-  clear: both;
-  border-bottom: 1px solid #e1e1e1;
-  font-family: "Novecento sans wide bold", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-  padding-bottom: 1rem;
-  letter-spacing: 2px;
-  font-size: 2.4rem;
-  margin-right: 180px; }
-
-.widget-title ul {
-  margin: 0; }
-
-.widget-title a {
-  list-style: none; }
-
-.search-title {
-  margin: 0;
-  font-family: "Novecento sans wide bold", sans-serif;
-  text-transform: uppercase;
-  font-size: 39px;
-  border-bottom: solid 1px #e1e1e1;
-  padding-bottom: 20px;
-  margin-right: 58px; }
-
-.search-results-title a {
-  text-decoration: none;
-  font-family: "Novecento sans wide bold", sans-serif;
-  color: #248A83;
-  font-size: 34px;
-  text-transform: uppercase; }
-
-.search-summary {
-  margin-bottom: 40px;
-  line-height: 1.75;
-  font-size: 1rem;
-  margin-right: 100px;
-  font-family: "Merriweather"; }
-
-.page-numbers {
-  display: inline-block;
-  background-color: #248A83;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 12px;
-  margin-right: 4px;
-  text-align: center;
-  text-decoration: none; }
-
-.search-pagination {
-  border-top: solid 1px #e1e1e1;
-  margin-bottom: 50px;
-  padding-top: 20px; }
-
-.current {
-  background-color: #808080; }
-
-.error-404 {
-  padding-left: 20px; }
-
-.error-page-title {
-  font-size: 38px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-  font-family: "Novecento sans wide bold", sans-serif;
-  margin-right: 90px; }
-
-fieldset {
-  border: 0;
-  padding-left: 0px; }
-
-.widgettitle {
-  text-transform: uppercase;
-  font-family: "Novecento sans wide bold"; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: #248A83; }
-
-.cat-item {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: #248A83; }
-
-input[type="searchError"] {
-  background-color: #f4f4f4;
-  border: 1px solid #e1e1e1;
-  color: #808080;
-  font-family: "Merriweather", serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75;
-  height: 39px;
-  border: 1px solid #e1e1e1;
-  padding: 6px; }
-
-.error-page-content {
-  color: #404040;
-  font-family: "Merriweather";
-  font-size: 16px;
-  line-height: 1.75; }
-
-.widget select {
-  max-width: 100%;
-  border: solid 1px #e1e1e1e1;
-  font-family: "Merriweather";
-  line-height: 1.75;
-  font-size: 16px;
-  color: #404040; }
-
-.widget_archive h2 {
-  letter-spacing: 2px; }
-
-.home-entry-title {
-  font-size: 34px;
-  color: #fff;
-  background-color: #248A83;
-  font-size: 33.6px;
-  padding: 0.75rem 1.5rem;
-  position: absolute;
-  max-width: 42.9%;
-  margin-top: -24.75rem;
-  font-family: "Novecento sans wide bold";
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-  .home-entry-title a {
+            box-shadow: none;
+    font-family: "Novecento sans wide", sans-serif;
     text-decoration: none;
-    color: white; }
-
-.blog-entry-meta {
-  background-color: #248A83;
-  bottom: 30px;
-  color: #fff;
-  font-family: "Novecento sans wide", sans-serif;
-  left: 27.9%;
-  position: relative;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  width: 47%; }
-
-.blog-home-content {
-  margin-bottom: 60px;
-  font-size: 16px;
-  line-height: 1.75;
-  font-family: "Merriweather";
-  margin-right: 50px; }
-
-.single-view-blog {
-  margin-bottom: 30px; }
-
-.comment-content {
-  border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  margin-right: 100px;
-  padding-left: 20px;
-  width: 90%;
-  color: #404040; }
-
-.comment-listing {
-  margin: 0;
-  padding: 0; }
-
-.comment-listing > li {
-  margin-right: 100px; }
-
-.comment-metadata {
-  color: #808080;
-  font-family: "Merriweather";
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75; }
-
-.comment-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.comment-reply-title {
-  font-size: 29px;
-  font-family: "Novecento sans wide bold", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.comment-author {
-  font-family: "Merriweather";
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #404040; }
-
-cite {
-  font-style: inherit;
-  font-weight: bold; }
-
-.comment-form p {
-  font-family: "Merriweather", sans-serif; }
-
-.comment-form .comment-form-comment {
-  font-family: "Novecento sans wide", sans-serif;
-  text-transform: uppercase; }
-
-.comment-form .comment-form-author,
-.comment-form .comment-form-email {
-  text-transform: uppercase;
-  font-family: "Novecento sans wide", sans-serif; }
-  .comment-form .comment-form-author input,
-  .comment-form .comment-form-email input {
-    width: 100%; }
-
-.comment-form .comment-form-author {
-  margin-right: 1%;
-  width: 45%;
-  float: left; }
-
-.comment-form .comment-form-email {
-  margin-left: 1%;
-  width: 43%;
-  float: left; }
-
-.comment-form .comment-form-url {
-  width: 93%;
-  text-transform: uppercase;
-  font-family: "Novecento sans wide", sans-serif; }
-  .comment-form .comment-form-url input {
-    width: 97%; }
-
-.comment-form .required {
-  color: #d99054; }
+    text-shadow: none; }
+    body input[type="submit"]:hover {
+      background-color: #19625d;
+      text-shadow: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+  body textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #e1e1e1;
+    width: 89%; }
+  body input[type="text"],
+  body input[type="email"],
+  body input[type="url"] {
+    background-color: #e1e1e1; }
+  body .border {
+    height: 1px;
+    border: 2px solid #c8c8c8; }
+  body .hero-image-header {
+    height: 100vh;
+    color: #fff;
+    top: 6px;
+    z-index: -1;
+    position: relative;
+    margin-top: -47px;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: "Novecento sans wide bold"; }
+  body .about-content > h2 {
+    color: #2f1339;
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-family: "Novecento sans wide bold", sans-serif; }
+  body .about-content > p {
+    color: #404040;
+    font-family: "Merriweather";
+    font-size: 16px;
+    line-height: 1.75;
+    padding-left: 263px;
+    padding-right: 374px; }
+  body .about-area {
+    margin-bottom: 50px; }
+  body .site-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  body .content-widget {
+    width: 136%;
+    padding-top: 40px; }
+  body .widget-wrapper {
+    padding-top: 51px;
+    padding-left: 20px;
+    width: 41%;
+    border-left: 1px solid #e1e1e1; }
+    body .widget-wrapper .widget-title {
+      clear: both;
+      font-family: "Novecento sans wide bold", sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    body .widget-wrapper .fa-phone {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1); }
+  body .widget {
+    font-family: "Merriweather";
+    line-height: 1.75; }
+  body .max-width-container {
+    max-width: 1120px;
+    margin: auto; }
+  body .findus-title {
+    font-family: "Novecento sans wide bold", sans-serif;
+    font-size: 39px;
+    color: #404040;
+    letter-spacing: 2px; }
+  body figure {
+    margin: 0; }
+  body .findus-content h2 {
+    color: #2f1339;
+    font-size: 34px;
+    font-family: "Novecento sans wide bold", sans-serif;
+    letter-spacing: 2px; }
+  body .findus-content p {
+    font-family: "Merriweather";
+    line-height: 1.75; }
+  body .wpcf7-form label {
+    font-family: "Novecento sans wide", sans-serif; }
+  body .contact-widget {
+    color: #248A83;
+    cursor: pointer; }
+    body .contact-widget:hover {
+      color: #2f1339; }
+  body .archive-title {
+    clear: both;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: "Novecento sans wide bold", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    margin-right: 180px; }
+  body .widget-title ul {
+    margin: 0; }
+  body .widget-title a {
+    list-style: none; }
+  body .search-title {
+    margin: 0;
+    font-family: "Novecento sans wide bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 39px;
+    border-bottom: solid 1px #e1e1e1;
+    padding-bottom: 20px;
+    margin-right: 58px; }
+  body .search-results-title a {
+    text-decoration: none;
+    font-family: "Novecento sans wide bold", sans-serif;
+    color: #248A83;
+    font-size: 34px;
+    text-transform: uppercase; }
+  body .search-summary {
+    margin-bottom: 40px;
+    line-height: 1.75;
+    font-size: 1rem;
+    margin-right: 100px;
+    font-family: "Merriweather"; }
+  body .page-numbers {
+    display: inline-block;
+    background-color: #248A83;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 12px;
+    margin-right: 4px;
+    text-align: center;
+    text-decoration: none; }
+  body .search-pagination {
+    border-top: solid 1px #e1e1e1;
+    margin-bottom: 50px;
+    padding-top: 20px; }
+  body .current {
+    background-color: #808080; }
+  body .error-404 {
+    padding-left: 20px; }
+  body .error-page-title {
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Novecento sans wide bold", sans-serif;
+    margin-right: 90px; }
+  body fieldset {
+    border: 0;
+    padding-left: 0px; }
+  body .widgettitle {
+    text-transform: uppercase;
+    font-family: "Novecento sans wide bold"; }
+  body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #248A83; }
+  body .cat-item {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: #248A83; }
+  body input[type="searchError"] {
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    color: #808080;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+    height: 39px;
+    border: 1px solid #e1e1e1;
+    padding: 6px; }
+  body .error-page-content {
+    color: #404040;
+    font-family: "Merriweather";
+    font-size: 16px;
+    line-height: 1.75; }
+  body .widget select {
+    max-width: 100%;
+    border: solid 1px #e1e1e1e1;
+    font-family: "Merriweather";
+    line-height: 1.75;
+    font-size: 16px;
+    color: #404040; }
+  body .widget_archive h2 {
+    letter-spacing: 2px; }
+  body .home-entry-title {
+    font-size: 34px;
+    color: #fff;
+    background-color: #248A83;
+    font-size: 33.6px;
+    padding: 0.75rem 1.5rem;
+    position: absolute;
+    max-width: 42.9%;
+    margin-top: -24.75rem;
+    font-family: "Novecento sans wide bold";
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    body .home-entry-title h2 {
+      background-color: #248A83;
+      color: #fff;
+      font-size: 33.6px;
+      left: 10.8%;
+      padding: 20px 2px;
+      position: absolute;
+      margin-top: 2.25rem;
+      max-width: 75%;
+      top: 46px;
+      text-decoration: none;
+      font-family: "Novecento sans wide bold"; }
+    body .home-entry-title a {
+      text-decoration: none;
+      color: white; }
+      body .home-entry-title a:hover {
+        color: #f0e4d1; }
+  body .blog-entry-meta {
+    background-color: #248A83;
+    bottom: 30px;
+    color: #fff;
+    font-family: "Novecento sans wide", sans-serif;
+    left: 27.9%;
+    position: relative;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    width: 47%; }
+  body .blog-home-content {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 1.75;
+    font-family: "Merriweather";
+    margin-right: 50px; }
+  body .single-view-blog {
+    margin-bottom: 30px; }
+  body .comment-content {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    margin-right: 100px;
+    padding-left: 20px;
+    width: 90%;
+    color: #404040; }
+  body .comment-listing {
+    margin: 0;
+    padding: 0; }
+  body .comment-listing > li {
+    margin-right: 100px; }
+  body .comment-metadata {
+    color: #808080;
+    font-family: "Merriweather";
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75; }
+  body .comment-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  body .comment-reply-title {
+    font-size: 29px;
+    font-family: "Novecento sans wide bold", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  body .comment-author {
+    font-family: "Merriweather";
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #404040; }
+  body cite {
+    font-style: inherit;
+    font-weight: bold; }
+  body .comment-form p {
+    font-family: "Merriweather", sans-serif; }
+  body .comment-form .comment-form-comment {
+    font-family: "Novecento sans wide", sans-serif;
+    text-transform: uppercase; }
+  body .comment-form .comment-form-author,
+  body .comment-form .comment-form-email {
+    text-transform: uppercase;
+    font-family: "Novecento sans wide", sans-serif; }
+    body .comment-form .comment-form-author input,
+    body .comment-form .comment-form-email input {
+      width: 100%; }
+  body .comment-form .comment-form-author {
+    margin-right: 1%;
+    width: 45%;
+    float: left; }
+  body .comment-form .comment-form-email {
+    margin-left: 1%;
+    width: 43%;
+    float: left; }
+  body .comment-form .comment-form-url {
+    width: 93%;
+    text-transform: uppercase;
+    font-family: "Novecento sans wide", sans-serif; }
+    body .comment-form .comment-form-url input {
+      width: 97%; }
+  body .comment-form .required {
+    color: #d99054; }

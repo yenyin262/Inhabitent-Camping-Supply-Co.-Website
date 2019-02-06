@@ -14,9 +14,6 @@ get_header(); ?>
 	<div id="primary" class="content-area max-width-container">
 		<main id="main" class="site-main" role="main">
 
-
-
-
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -35,8 +32,6 @@ get_header(); ?>
 			
 			</header><!-- .page-header -->
 
-
-
 		<?php /* Start the Loop */ ?>
             
             <ul class="product-list">
@@ -49,7 +44,6 @@ get_header(); ?>
 			<?php endwhile; ?>
             </ul>
 		
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
