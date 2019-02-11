@@ -780,9 +780,9 @@ body {
       color: #248A83; }
       body .green-header .header_logo_menu .main-navigation a:hover {
         color: #2f1339; }
-    body .green-header .header_logo_menu .open-search {
+    body .green-header .header_logo_menu .open-search > .fa-search {
       color: #248A83; }
-      body .green-header .header_logo_menu .open-search:hover {
+      body .green-header .header_logo_menu .open-search > .fa-search:hover {
         color: #2f1339; }
   body .white-header input::-webkit-input-placeholder {
     color: #f0e4d1;

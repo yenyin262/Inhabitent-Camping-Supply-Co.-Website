@@ -9,9 +9,8 @@
 
 	<div class="product-container">
 		<li id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php if ( has_post_thumbnail() ) : ?>
-		<div class="photo"><a href="<?php echo esc_url(get_permalink())?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
-			
+			<?php if ( has_post_thumbnail() ) : ?>
+				<div class="photo"><a href="<?php echo esc_url(get_permalink())?>"><?php the_post_thumbnail( 'large' ); ?></a></div>
 			<?php endif; ?>
 			<div class="border"></div>
 			<div class="product-info">
@@ -19,8 +18,8 @@
 				<?php the_title(); ?>
 				</p>
 				<span class="product-price"><?php 
-				echo CFS()->get( 'price' );
+					echo CFS()->get( 'price' );
 				?></span>	
 			</div>
-	</li><!-- #post-## -->
+		</li><!-- #post-## -->
 	</div>

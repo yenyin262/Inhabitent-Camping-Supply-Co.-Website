@@ -5,10 +5,9 @@
  * @package RED_Starter_Theme
  */
 ?>
- <div class="green-header">
+<div class="green-header">
 	<?php get_header(); ?>
 	<div class="max-width-container site-widget">
-
 		<div id="primary" class="content-area content-widget">
 			<main id="main" class="site-main" role="main">
 
@@ -41,8 +40,6 @@
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-
 		<div class="widget-wrapper">
 			<?php dynamic_sidebar(); ?>
 		</div> 

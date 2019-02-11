@@ -51,8 +51,6 @@ get_header(); ?>
                 </div>
             </div>
 
-            
-                        
             <div class="latest-adventures-section">
                 <h2>Latest Adventures </h2>
                 <div class="grid-container">
@@ -77,8 +75,6 @@ get_header(); ?>
                     <a href="#" button class="button_latestadventures">More Adventures</a>
                 </div>
             </div>
-
-
 	    </main><!-- #main -->
     </div><!-- #primary -->
 

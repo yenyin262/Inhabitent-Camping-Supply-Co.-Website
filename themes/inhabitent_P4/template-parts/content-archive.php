@@ -22,7 +22,6 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	
     <div class="blog-home-content">
         <?php the_excerpt(); ?>
 		<a class="journal-button journal-home" href="<?php echo get_permalink()?>">Read More →</a>

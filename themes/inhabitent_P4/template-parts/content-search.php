@@ -14,12 +14,12 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="search-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
+		</div>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="search-summary">
 		<?php the_excerpt(); ?>
 		<a class="journal-button journal-home" href="<?php echo get_permalink()?>">Read More →</a>
-	</div><!-- .entry-summary -->
+	</div>
 </article><!-- #post-## -->

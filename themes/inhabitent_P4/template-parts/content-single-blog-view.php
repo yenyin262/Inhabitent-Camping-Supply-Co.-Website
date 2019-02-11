@@ -20,8 +20,8 @@
 
 		<div class="blog-entry-meta">
     <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>  
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		</div>
+	</header>
 
 	<div class="blog-home-content single-view-blog">
 		<?php the_content(); ?>
@@ -31,7 +31,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="blog-entry-footer">
         <?php red_starter_entry_footer(); ?>
@@ -39,6 +39,6 @@
     <a class="social-button blogpost" href=""><i class="fab fa-facebook-f"></i> Like</a>
     <a class="social-button blogpost" href=""><i class="fab fa-twitter"></i> Tweet</a>
     <a class="social-button blogpost" href=""><i class="fab fa-pinterest"></i> Pin</a>
-	</footer><!-- .entry-footer -->
+	</footer>
 </article><!-- #post-## -->
 

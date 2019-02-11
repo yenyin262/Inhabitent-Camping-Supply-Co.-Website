@@ -5,11 +5,8 @@
  * @package RED_Starter_Theme
  */
 ?>
- <div class="white-header">
-
-	 <?php
-get_header(); ?>
-
+<div class="white-header">
+	<?php get_header(); ?>
 	<div id="primary" class="content-area about-area">
 		<main id="main" class="site-main" role="main">
 
@@ -21,7 +18,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php //get_sidebar(); ?>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>	
 </div>

@@ -35,12 +35,8 @@
                    		<p> copyright <span class="copyright-year">© 2019</span> inhabitent</p> 
 					</div>
 				</div><!-- .site-info -->
-				
-
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
 		<?php wp_footer(); ?>
-
 	</body>
 </html>

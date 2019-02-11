@@ -4,9 +4,7 @@
 
     <div class="max-width-container site-widget">
         <div id="primary" class="content-area content-widget">
-
             <main id="main" class="site-main " role="main">
-
                 <?php if ( have_posts() ) : ?>
 
                 <?php if ( is_home() && ! is_front_page() ) : ?>
@@ -20,26 +18,24 @@
 
                 <?php /* Start the Loop */ ?>
 
-            <?php while ( have_posts() ) : the_post(); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
+
+                    <?php get_template_part( 'template-parts/content-homepage' ); ?>
+
+                <?php endwhile; ?>
+
+                <?php the_posts_navigation(); ?>
+
+                <?php else : ?>
 
                 <?php get_template_part( 'template-parts/content-homepage' ); ?>
 
-            <?php endwhile; ?>
-
-            <?php the_posts_navigation(); ?>
-
-            <?php else : ?>
-
-            <?php get_template_part( 'template-parts/content-homepage' ); ?>
-
-            <?php endif; ?>
+                <?php endif; ?>
 		    </main><!-- #main -->
         </div><!-- #primary -->
-    
-         <div class="widget-wrapper">
-              <?php dynamic_sidebar(); ?>
-      
-         </div>
+        <div class="widget-wrapper">
+            <?php dynamic_sidebar(); ?>
+        </div>
     </div>
     <?php get_footer(); ?>  
 </div>
