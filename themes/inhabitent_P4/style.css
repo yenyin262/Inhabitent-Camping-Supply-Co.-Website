@@ -715,7 +715,7 @@ body {
   margin: 0;
   padding: 0; }
   body p.body {
-    font-family: "Merriweather", "$font__main";
+    font-family: "Merriweather", sans-serif;
     font-size: 16px;
     line-height: 1.75;
     color: #404040; }
@@ -755,6 +755,7 @@ body {
       body .header_logo_menu .nav-search-wrapper .main-navigation li {
         padding-right: 20px; }
       body .header_logo_menu .nav-search-wrapper .main-navigation a {
+        font-family: "Novecento sans wide", sans-serif;
         color: white; }
         body .header_logo_menu .nav-search-wrapper .main-navigation a:hover {
           background-color: transparent;
@@ -901,7 +902,6 @@ body {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
-    letter-spacing: 2px;
     font-weight: 400;
     text-transform: uppercase; }
     body .inhabitent-main-container .inhabitent-journal-container .journalHomepage {
@@ -914,14 +914,19 @@ body {
         border-bottom: 5px solid #e1e1e1; }
       body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .post-date {
         padding-left: 20px;
-        font-size: 10px; }
+        font-size: 12px;
+        font-family: "Merriweather";
+        text-transform: capitalize; }
       body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .comments {
-        font-size: 10px; }
+        font-size: 12px;
+        font-family: "Merriweather";
+        text-transform: capitalize; }
       body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title {
         font-size: 1.2rem;
         padding-left: 19px;
         line-height: 1.25;
-        font-family: "Novecento sans wide bold"; }
+        font-family: "Novecento sans wide bold";
+        letter-spacing: 2px; }
         body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title a {
           color: #248A83; }
           body .inhabitent-main-container .inhabitent-journal-container .journalHomepage .journal-title a:hover {
@@ -938,7 +943,8 @@ body {
     font-size: 14px;
     width: 27%;
     height: 37px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    font-family: "Novecento sans wide", sans-serif; }
   body .findUs,
   body .journal-button:visited {
     color: #000; }
@@ -993,7 +999,10 @@ body {
           width: 25%;
           -webkit-box-shadow: none;
                   box-shadow: none;
-          border-color: #fff; }
+          border-color: #fff;
+          text-shadow: none;
+          font-size: 14px;
+          font-weight: 100; }
           body .latest-adventures-section .grid-container .grid-item-canoe .button_canoe:hover {
             background-color: #248A83;
             border: none; }
@@ -1028,7 +1037,9 @@ body {
                   box-shadow: none;
           left: 6%;
           top: 69%;
-          width: 25%; }
+          width: 25%;
+          text-shadow: none;
+          font-size: 14px; }
           body .latest-adventures-section .grid-container .grid-item-beach .button_beach:hover {
             background-color: #248A83;
             border: none; }
@@ -1063,7 +1074,9 @@ body {
                   box-shadow: none;
           top: 69%;
           left: 6%;
-          width: 60%; }
+          width: 60%;
+          text-shadow: none;
+          font-size: 14px; }
           body .latest-adventures-section .grid-container .grid-item-mountain .button_mountain:hover {
             background-color: #248A83;
             border: none; }
@@ -1100,7 +1113,10 @@ body {
           -webkit-box-shadow: none;
                   box-shadow: none;
           left: 7%;
-          width: 52%; }
+          width: 52%;
+          text-shadow: none;
+          font-family: "Novecento sans wide";
+          font-size: 14px; }
           body .latest-adventures-section .grid-container .grid-item-sky .button_sky:hover {
             background-color: #248A83;
             border: none; }
@@ -1339,7 +1355,9 @@ body {
     margin-top: 20px; }
   body .findUs,
   body .journal-home {
-    margin-left: 0; }
+    margin-left: 0;
+    font-family: "Novecento sans wide", sans-serif;
+    text-transform: uppercase; }
   body .cat-links {
     text-transform: uppercase; }
   body .cat-links a {
@@ -1668,5 +1686,5 @@ body {
     font-family: "Novecento sans wide", sans-serif; }
     body .comment-form .comment-form-url input {
       width: 97%; }
-  body .comment-form .required {
+  body .required {
     color: #d99054; }

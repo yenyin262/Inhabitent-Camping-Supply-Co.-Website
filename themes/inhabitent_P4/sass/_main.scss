@@ -3,7 +3,7 @@ body {
   padding: 0;
 
   p.body {
-    font-family: $brand-body-font, "$font__main";
+    font-family: $brand-body-font, $font__main;
     font-size: 16px;
     line-height: 1.75;
     color: $color__text-main;
@@ -47,6 +47,7 @@ body {
       }
 
       .main-navigation a {
+        font-family: $brand-font, $font__main;
         color: white;
         &:hover {
           background-color: transparent;
@@ -233,7 +234,7 @@ body {
     .inhabitent-journal-container {
       display: flex;
       text-align: left;
-      letter-spacing: 2px;
+      // letter-spacing: 2px;
       font-weight: 400;
       text-transform: uppercase;
       .journalHomepage {
@@ -248,11 +249,15 @@ body {
 
         .post-date {
           padding-left: 20px;
-          font-size: 10px;
+          font-size: 12px;
+          font-family: $brand-body-font;
+          text-transform: capitalize;
         }
 
         .comments {
-          font-size: 10px;
+          font-size: 12px;
+          font-family: $brand-body-font;
+          text-transform: capitalize;
         }
 
         .journal-title {
@@ -260,6 +265,7 @@ body {
           padding-left: 19px;
           line-height: 1.25;
           font-family: $brand-bold-font;
+          letter-spacing: 2px;
 
           a {
             color: $brand-color;
@@ -288,6 +294,7 @@ body {
     width: 27%;
     height: 37px;
     margin-left: 20px;
+    font-family: $brand-font, $font__main;
   }
   .findUs,
   .journal-button:visited {
@@ -349,7 +356,10 @@ body {
           width: 25%;
           box-shadow: none;
           border-color: #fff;
-
+          text-shadow: none;
+          font-size: 14px;
+          font-weight: 100;
+          
           &:hover {
             background-color: $brand-color;
             border: none;
@@ -368,7 +378,6 @@ body {
 
       .grid-item-beach {
         font-size: 25px;
-
         text-align: left;
         padding-left: 8px;
         color: white;
@@ -390,6 +399,8 @@ body {
           left: 6%;
           top: 69%;
           width: 25%;
+          text-shadow: none;
+          font-size: 14px;
           &:hover {
             background-color: $brand-color;
             border: none;
@@ -430,6 +441,8 @@ body {
           top: 69%;
           left: 6%;
           width: 60%;
+          text-shadow: none;
+          font-size: 14px;
           &:hover {
             background-color: $brand-color;
             border: none;
@@ -470,6 +483,9 @@ body {
           box-shadow: none;
           left: 7%;
           width: 52%;
+          text-shadow: none;
+          font-family: $brand-font;
+          font-size: 14px;
           &:hover {
             background-color: $brand-color;
             border: none;
@@ -781,6 +797,8 @@ body {
   .findUs,
   .journal-home {
     margin-left: 0;
+    font-family: $brand-font, $font__main;
+    text-transform: uppercase; 
   }
 
   .cat-links {
@@ -1235,9 +1253,8 @@ body {
         width: 97%;
       }
     }
-
-    .required {
-      color: #d99054;
-    }
+  }
+  .required {
+    color: #d99054;
   }
 }
