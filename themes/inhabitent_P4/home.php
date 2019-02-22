@@ -31,7 +31,7 @@
                 <?php get_template_part( 'template-parts/content-homepage' ); ?>
 
                 <?php endif; ?>
-		    </main><!-- #main -->
+            </main><!-- #main -->
         </div><!-- #primary -->
         <div class="widget-wrapper">
             <?php dynamic_sidebar(); ?>
